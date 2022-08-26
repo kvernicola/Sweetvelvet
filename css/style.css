@@ -1,0 +1,947 @@
+/*
+font-family: 'Acme', sans-serif;
+font-family: 'Actor', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Source Code Pro', monospace;
+*/
+/* -----------------------------------------   INDEX.HTML   -------------------*/
+/*----------------------------------------    1920x1080     -------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 3px solid black; */
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    color: white;
+    margin-left: 2rem;
+}
+
+p, a, li, span, legend {
+    font-family: 'Acme', sans-serif;
+    font-size: 1.7rem;
+    color: white;
+}
+
+@media screen and (max-width: 1024px) {
+    p, a, li, span {
+        font-size: 1.3rem;    
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1, h2, h3, h4 {
+        font-size: 35px;
+        margin-left: 10px;
+    }
+    p, a, li, span {
+        font-size: 1.3rem;    
+    }
+}
+
+hr {
+    width: 92%;
+    margin: 0 auto;
+}
+
+/* ------------------------------------      HEADER    ---------------------- */
+
+div#boxHeaderNav {
+    background: #FF0000;
+    max-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 3rem;
+    position: sticky;
+    top: 0px;
+}
+
+div#boxHeaderNav header {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+div#boxHeaderNav header .imgMenu {
+    width: 80px;
+    display: none;
+}
+
+div#boxHeaderNav header .imgMenu img {
+    width: 100%;
+}
+
+
+div#boxHeaderNav header a,
+div#boxHeaderNav header a:visited,
+div#boxHeaderNav nav ul a,
+div#boxHeaderNav nav ul a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+div#boxHeaderNav header span {
+    margin-right: 20%;
+}
+
+div#boxHeaderNav nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+div#boxHeaderNav nav ul li {
+    padding: 0 2rem;
+}
+
+
+footer {
+    background-color: #FF0000;
+    padding: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    div#boxHeaderNav {
+        padding: 0;
+    }
+    div#boxHeaderNav nav {
+        display: none;
+    }
+    div#boxHeaderNav header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    div#boxHeaderNav header .imgMenu {
+        display: block;
+        margin-right: 1rem;
+    }
+    div#boxHeaderNav header .imgMenu ul.menuHover ul {
+        position: absolute;
+        list-style-type: none;
+        display: none;
+        padding: 5px 0;
+    }
+    div#boxHeaderNav header .imgMenu ul.menuHover li:hover ul {
+        display: block;
+        background-color: #FF0000;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    
+}
+
+
+/* ---------------------------Section FrontPage---------------------- */
+#sectionFrontPage {
+    background-color: #175F7E;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+#sectionFrontPage h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    color: white;
+    margin-left: 4rem;
+}
+
+#sectionFrontPage h3 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+    font-size: 3rem;
+    margin: 3rem 0 0 10rem;
+}
+
+
+#sectionFrontPage h4 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+    display: block;
+    width: 300px;
+    margin: 2rem auto 4rem;
+    font-size: 30px;
+}
+
+#sectionFrontPage div.boxImageFP {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 4rem;
+}
+
+#sectionFrontPage div.boxImageFP1 {
+    width: 450px;
+    margin-top: 100px;
+}
+
+#sectionFrontPage div.boxImageFP1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+#sectionFrontPage div.boxImageFP2 {
+    width: 1100px;
+    height: 700px;
+}
+
+#sectionFrontPage div.boxImageFP2 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 1400px) {
+    #sectionFrontPage div.boxImageFP1 {
+        width: 350px;
+    }
+    #sectionFrontPage div.boxImageFP2 {
+        width: 750px;
+        height: 550px;
+    }    
+}
+
+@media screen and (max-width: 1024px) {
+    #sectionFrontPage {
+        padding: 1rem;
+    }
+    #sectionFrontPage div.boxImageFP1 {
+        width: 250px;
+    }
+    #sectionFrontPage div.boxImageFP2 {
+        width: 600px;
+    }    
+}
+
+@media screen and (max-width: 600px) {
+    #sectionFrontPage div.boxImageFP {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        height: 1100px;
+    }
+    #sectionFrontPage div.boxImageFP1 {
+        width: 500px;
+        margin-top: 50px;
+    }
+    #sectionFrontPage div.boxImageFP2 {
+        width: 600px;
+    }    
+    #sectionFrontPage h2 {
+        font-size: 3.5rem;
+        text-align: center;
+        margin: 0;
+    }
+    #sectionFrontPage h3 {
+        font-size: 3rem;
+        text-align: center;
+        margin: 0;
+    }
+    #sectionFrontPage h4 {
+        width: 300px;
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+/* ------------------------Section Craft------------------------ */
+
+#sectionCraft {
+    padding: 7rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #D88F82;
+}
+
+#sectionCraft div.boxImageCraft {
+    width: 800px;
+}
+
+#sectionCraft div.boxImageCraft img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+#sectionCraft div.boxTextCraft {
+    width: 500px;
+}
+
+#sectionCraft h4 {
+    margin: 1rem 0 2rem;
+    padding-left: 2rem;
+}
+
+#sectionCraft p {
+    text-align: justify;
+    line-height: 2.5rem;
+}
+
+#sectionCraft a {
+    display: block;
+    width: 350px;
+    text-decoration: none;
+    margin: 4rem auto 0;
+}
+
+@media screen and (max-width: 1400px) {
+    #sectionCraft div.boxImageCraft {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #sectionCraft {
+        padding: 5rem;
+    }
+    #sectionCraft div.boxImageCraft {
+        width: 450px;
+    }
+    #sectionCraft div.boxTextCraft {
+        width: 380px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #sectionCraft {
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    #sectionCraft div.boxTextCraft {
+        width: 80%;
+    }
+    #sectionCraft h3, #sectionCraft h4 {
+        text-align: center;
+        margin: 1rem 0;
+    }
+    #sectionCraft p {
+        text-align: justify;
+        margin-top: 3rem;
+    }
+    #sectionCraft a {
+        display: block;
+        width: 350px;
+        text-decoration: none;
+        text-align: center;
+    }
+}
+
+/* ----------------------------     Section BestSellers    ---------------- */
+
+#sectionBestSellers {
+    padding: 3rem;
+    display: none;
+}
+
+/* ----------------------------     Section Delivery    ---------------- */
+
+#sectionDelivery {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+#sectionDelivery h3 {
+    margin-left: 4rem;
+    color: #D88F82;
+}
+/* Sry por este choclo, pero como se haria ordenar el texto de una forma mas o menos asi? */
+
+#sectionDelivery div.boxTextDelivery span {
+    display: block;
+    width: 700px;
+    color: #D88F82;
+}
+
+#sectionDelivery div.boxTextDelivery a {
+    display: block;
+    width: 200px;
+    color: #D88F82;
+    margin: 3rem auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+#sectionDelivery div.boxTextDelivery span.textMoved1 {
+    margin-top: 2rem;
+    margin-left: 4rem;
+}
+
+#sectionDelivery div.boxTextDelivery span.textMoved2 {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#sectionDelivery div.boxTextDelivery span.textMoved3 {
+    margin-top: 1rem;
+    text-align: right;
+    margin-right: 16rem;
+}
+
+#sectionDelivery div.boxTextDelivery span.textMoved4 {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#sectionDelivery div.boxTextDelivery span.textMoved5 {
+    margin-top: 1rem;
+    text-align: right;
+}
+
+#sectionDelivery div.boxTextDelivery span.textMoved6 {
+    margin-top: 2rem;
+    margin-left: 7rem;
+}
+
+#sectionDelivery div.boxTextDelivery span.textMoved7 {
+    margin-top: 1rem;
+    margin-left: 4rem;
+}
+
+#sectionDelivery div.boxImageDelivery {
+    width: 750px;
+    padding-top: 3rem;
+}
+
+#sectionDelivery div.boxImageDelivery img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+    #sectionDelivery div.boxTextDelivery span {
+        width: 550px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #sectionDelivery div.boxTextDelivery {
+        width: 60%;
+    }
+    #sectionDelivery div.boxImageDelivery {
+        width: 400px;
+        padding-top: 3rem;
+    }
+    #sectionDelivery div.boxTextDelivery span.textMoved1 {
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+    
+    #sectionDelivery div.boxTextDelivery span.textMoved2 {
+        margin-top: 1rem;
+        text-align: center;
+    }
+    
+    #sectionDelivery div.boxTextDelivery span.textMoved3 {
+        margin-top: 1rem;
+        text-align: right;
+        margin-right: 8rem;
+    }
+    
+    #sectionDelivery div.boxTextDelivery span.textMoved4 {
+        margin-top: 2rem;
+        text-align: center;
+    }
+    
+    #sectionDelivery div.boxTextDelivery span.textMoved5 {
+        margin-top: 1rem;
+        text-align: right;
+    }
+    
+    #sectionDelivery div.boxTextDelivery span.textMoved6 {
+        margin-top: 2rem;
+        margin-left: 3.5rem;
+    }
+    
+    #sectionDelivery div.boxTextDelivery span.textMoved7 {
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #sectionDelivery {
+        width: 100%;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #sectionDelivery div.boxTextDelivery {
+        width: 100%;
+    }
+    #sectionDelivery div.boxImageDelivery {
+        width: 100%;
+        padding-top: 3rem;
+    }
+    #sectionDelivery div.boxTextDelivery h3 {
+        text-align: center;
+    }
+    #sectionDelivery div.boxTextDelivery span {
+        width: 100%;
+    }
+}
+
+/* ----------------------------     Section Contact Us    ---------------- */
+#sectionContactUs {
+    background-color: #175F7E;
+    padding: 3rem 3rem 3rem 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sectionContactUs div.boxTextContactUs {
+    width: 30%;
+}
+
+#sectionContactUs div.boxTextContactUs h4 {
+    padding: 3rem 0;
+}
+
+#sectionContactUs div.boxTextContactUs a {
+    display: block;
+    padding: 6rem 5rem;
+    text-decoration: none;
+}
+
+#sectionContactUs div.boxImageContactUs {
+    width: 70%;
+    height: 900px;
+    display: grid;
+    grid-template-areas:
+    "boxImage1 boxImage2"
+    "boxImage1 boxImage3";
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 40% 60%;
+    column-gap: 15px;
+}
+
+#sectionContactUs div.boxImageContactUs div.boxImage1 {
+    grid-area: boxImage1;
+    display: flex;
+    align-items: center;
+}
+
+#sectionContactUs div.boxImageContactUs div.boxImage1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+#sectionContactUs div.boxImageContactUs div.boxImage2 {
+    grid-area: boxImage2;
+    width: 500px;
+}
+
+#sectionContactUs div.boxImageContactUs div.boxImage2 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+#sectionContactUs div.boxImageContactUs div.boxImage3 {
+    grid-area: boxImage3;
+    width: 750px;
+}
+
+#sectionContactUs div.boxImageContactUs div.boxImage3 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 1400px) {
+    #sectionContactUs div.boxImageContactUs div.boxImage3 {
+        grid-area: boxImage3;
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #sectionContactUs div.boxTextContactUs h3,
+    #sectionContactUs div.boxTextContactUs h4 {
+        margin-left: 0;
+    }
+    #sectionContactUs div.boxImageContactUs div.boxImage2 {
+        grid-area: boxImage2;
+        width: 350px;
+    }
+    #sectionContactUs div.boxImageContactUs div.boxImage3 {
+        grid-area: boxImage3;
+        width: 400px;
+    }
+    #sectionContactUs div.boxImageContactUs {
+        column-gap: 5px;
+        width: 70%;
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #sectionContactUs {
+        padding: 3rem 3rem 3rem 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+    #sectionContactUs div.boxTextContactUs {
+        width: 100%;
+    }
+    #sectionContactUs div.boxTextContactUs h3,
+    #sectionContactUs div.boxTextContactUs h4,
+    #sectionContactUs div.boxTextContactUs a {
+        text-align: center;
+    }
+    #sectionContactUs div.boxImageContactUs {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-areas:
+        "boxImage1 boxImage1"
+        "boxImage2 boxImage2"
+        "boxImage3 boxImage3";
+        grid-template-columns: 30% 70%;
+        grid-template-rows: auto auto auto;
+        row-gap: 15px;
+    }
+    #sectionContactUs div.boxImageContactUs div.boxImage1 {
+        height: 500px;
+    }
+    
+    #sectionContactUs div.boxImageContactUs div.boxImage1 img {
+        height: 100%;
+        border-radius: 15px;
+    }
+    #sectionContactUs div.boxImageContactUs div.boxImage2 {
+        width: 100%;
+    }
+    #sectionContactUs div.boxImageContactUs div.boxImage3 {
+        width: 100%;
+    }
+}
+
+/* ---------------------------------   FOOTER     ------------------- */
+
+#footerNavBar ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+#footerNavBar ul li {
+    list-style-type: none;
+    padding: 2rem 0;
+}
+
+#footerNavBar ul li a {
+    text-decoration: none;
+}
+
+#boxFooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 4rem;
+    width: 100%;
+}
+
+#boxFooter div.boxTextFooter1 {
+    width: 400px;
+}
+
+#boxFooter div.boxTextFooter2 {
+    width: 400px;
+}
+
+#boxFooter div.boxTextFooter2 a h2 {
+    text-align: center;
+}
+
+#boxFooter div.boxTextFooter3 {
+    width: 400px;
+    text-align: right;
+}
+
+#boxFooter div a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    #boxFooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #boxFooter div.boxTextFooter1 {
+        width: 100%;
+    }
+    #boxFooter div.boxTextFooter2 {
+        width: 100%;
+    }
+    #boxFooter div.boxTextFooter3 {
+        width: 100%;
+    }
+    #boxFooter h2 {
+        margin: 0;
+        padding: 2rem 0;
+    }
+}
+
+/* -----------------------------------------   PRODUCTOS.HTML   -------------------*/
+/* -----------------------------------------   PRODUCTOS.HTML   -------------------*/
+
+#sectionProducts {
+    padding: 4rem;
+    background-color: #FF0000;
+}
+
+#sectionProducts h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+/*Probando Grid---Armada y distribuida a modo de prueba, tengo que rearmarla y volver a probar con template-area que no me salio :(*/
+#sectionProducts div.grid {
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    gap: 20px;
+}
+
+div.grid div.gridBox {
+    border: 5px hidden #530000;
+    box-shadow: 0 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #FF0000;
+}
+
+div.grid div.gridBox img {
+    object-fit: scale-down;
+    width: 100%;
+    height: 100%;
+    border-color: black;
+}
+
+div.grid div.img1 {
+    grid-column: 1;
+    grid-row: 1/7;
+}
+
+div.grid div.img2 {
+    grid-column: 2;
+    grid-row: 1/6;
+}
+
+div.grid div.img3 {
+    grid-column: 3;
+    grid-row: 1/10;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+div.grid div.img4 {
+    grid-column: 4;
+    grid-row: 1/16;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+div.grid div.img5 {
+    grid-column: 1;
+    grid-row: 7/12;
+}
+
+div.grid div.img6 {
+    grid-column: 2;
+    grid-row: 6/12;
+}
+
+div.grid div.img7 {
+    grid-column: 3;
+    grid-row: 10/16;
+}
+
+div.grid div.img8 {
+    grid-column: 1/3;
+    grid-row: 12/16;
+}
+
+/* -----------------------------------------   CONTACTO.HTML   -------------------*/
+/* -----------------------------------------   CONTACTO.HTML   -------------------*/
+#mainContact {
+    background-color: #D88F82;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#mainContact h1 {
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+}
+
+#mainContact legend {
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+#mainContact form {
+    border: 2px solid #ffffff;
+    max-width: 768px;
+    background-color: #D88F82;
+    margin: 0px auto;
+    padding: 3rem;
+}
+
+#mainContact input {
+    line-height: normal;
+}
+
+#mainContact textarea {
+    overflow: auto;
+    line-height: 150%;
+    height: 150px;
+    resize: none;
+}
+
+#mainContact .email {
+    float: right;
+    width: 45%;
+}
+
+#mainContact .telephone {
+    float: left;
+    width: 45%;
+}
+
+#mainContact .message {
+	float: none;
+}
+
+::placeholder {
+    color: #ffffff;
+}
+
+#mainContact .checkbox {
+    color: #ffffff;
+}
+
+#mainContact strong {
+    color: #ffffff;
+}
+
+#mainContact input[type='text'],
+#mainContact input[type='email'],
+#mainContact input[type='tel'],
+select,
+textarea {
+	background: #D88F82;
+    border: none;
+	border-bottom: solid 2px #ffffff;
+	color: #ffffff;
+	font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+	margin: 0.5rem 0 1rem 0;
+	padding: 0.3rem 0 0.3rem 0;
+    text-transform: uppercase;
+	width: 100%;
+}
+
+#mainContact input[type='submit'], 
+#mainContact input[type='reset'] {
+    background: none;
+    font-size: 1rem;
+    border-color: #ffffff;
+    border-radius: 8px;
+    width: 25%;
+    color: #ffffff;
+    margin-top: 1rem;
+}
+
+/* -----------------------------------------   LOGIN.HTML   -------------------*/
+/* -----------------------------------------   LOGIN.HTML   -------------------*/
+#mainLogin {
+    background-color: #D88F82;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: 850px;
+}
+
+#mainLogin h1 {
+    text-align: center;
+}
+
+#mainLogin legend {
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+#mainLogin form {
+    border: 2px solid #ffffff;
+    max-width: 768px;
+    background-color: #D88F82;
+    margin: 0px auto;
+    padding: 3rem;
+}
+
+#mainLogin input {
+    line-height: normal;
+}
+
+#mainLogin .username {
+    width: 45%;
+    margin-bottom: 2rem;
+}
+
+#mainLogin .passw {
+    width: 45%;
+    margin-bottom: 1rem;
+}
+
+#mainLogin .checkbox {
+    color: #ffffff;
+    width: 45%;
+    margin-bottom: 3rem;
+}
+
+#mainLogin input[type='submit'] {
+    background: none;
+    font-size: 1rem;
+    border-color: #ffffff;
+    border-radius: 8px;
+    width: 25%;
+    color: #ffffff;
+    margin-top: 3rem;
+}
+
+#mainLogin input[type='email'],
+#mainLogin input[type='password'] {
+	background: #D88F82;
+    border: none;
+	border-bottom: solid 2px #ffffff;
+	color: #ffffff;
+	font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+	margin: 0.5rem 0 1rem 0;
+	padding: 0.3rem 0 0.3rem 0;
+    text-transform: uppercase;
+	width: 100%;
+}
+
+@media  screen and (max-width: 1400px) {
+    #mainLogin {
+        height: 530px;
+    }
+}
