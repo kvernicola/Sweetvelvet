@@ -11,7 +11,7 @@ font-family: 'Source Code Pro', monospace;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 3px solid black; */
+    border: 1px solid black;
 }
 
 h1, h2, h3, h4 {
@@ -106,6 +106,12 @@ footer {
     padding: 2rem;
 }
 
+@media screen and (max-width: 1024px) {
+    div#boxHeaderNav header span {
+        margin-right: 10%;
+    }
+}
+
 @media screen and (max-width: 600px) {
     div#boxHeaderNav {
         padding: 0;
@@ -127,6 +133,8 @@ footer {
         list-style-type: none;
         display: none;
         padding: 5px 0;
+        margin: 5px 0;
+        right: 5px;
     }
     div#boxHeaderNav header .imgMenu ul.menuHover li:hover ul {
         display: block;
@@ -135,8 +143,16 @@ footer {
 }
 
 
-@media screen and (max-width: 480px) {
-    
+@media screen and (max-width: 320px) {
+    div#boxHeaderNav h1 {
+        font-size: 25px;
+    }
+    div#boxHeaderNav header span {
+        margin: 0%;
+    }
+    div#boxHeaderNav header .imgMenu {
+        width: 50px;
+    }
 }
 
 
@@ -162,7 +178,6 @@ footer {
     margin: 3rem 0 0 10rem;
 }
 
-
 #sectionFrontPage h4 {
     font-family: 'Dancing Script', cursive;
     font-weight: bolder;
@@ -173,15 +188,26 @@ footer {
 }
 
 #sectionFrontPage div.boxImageFP {
+    padding: 2rem;
+    display: grid;
+    grid-template-areas: 
+    "boxImageFP1 boxImageFP2 boxImageFP2";
+    grid-template-columns: 1fr 2fr 2fr;
+    column-gap: 15px;
+    justify-items: center;
+}
+
+/* #sectionFrontPage div.boxImageFP {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 0 4rem;
-}
+} */
 
 #sectionFrontPage div.boxImageFP1 {
     width: 450px;
     margin-top: 100px;
+    grid-area: boxImageFP1;
 }
 
 #sectionFrontPage div.boxImageFP1 img {
@@ -190,12 +216,12 @@ footer {
 }
 
 #sectionFrontPage div.boxImageFP2 {
-    width: 1100px;
-    height: 700px;
+    height: 550px;
+    grid-area: boxImageFP2;
 }
 
 #sectionFrontPage div.boxImageFP2 img {
-    width: 100%;
+    height: 100%;
     border-radius: 15px;
 }
 
@@ -204,20 +230,19 @@ footer {
         width: 350px;
     }
     #sectionFrontPage div.boxImageFP2 {
-        width: 750px;
-        height: 550px;
+        height: 400px;
     }    
 }
 
 @media screen and (max-width: 1024px) {
-    #sectionFrontPage {
+    /* #sectionFrontPage {
         padding: 1rem;
-    }
+    } */
     #sectionFrontPage div.boxImageFP1 {
         width: 250px;
     }
     #sectionFrontPage div.boxImageFP2 {
-        width: 600px;
+        height: 300px;
     }    
 }
 
@@ -227,7 +252,7 @@ footer {
         flex-direction: column;
         align-items: center;
         padding: 0;
-        height: 1100px;
+        height: 800px;
     }
     #sectionFrontPage div.boxImageFP1 {
         width: 500px;
@@ -253,10 +278,24 @@ footer {
     }
 }
 
+@media screen and (max-width: 320px) {
+    #sectionFrontPage div.boxImageFP1 {
+        width: 300px;
+        margin-top: 10px;
+    }
+    #sectionFrontPage div.boxImageFP2 {
+        width: 310px;
+        height: 250px;
+    }
+    #sectionFrontPage h4 {
+        width: 240px;
+    }
+}
+
 /* ------------------------Section Craft------------------------ */
 
 #sectionCraft {
-    padding: 7rem;
+    padding: 5rem;
     display: flex;
     justify-content: space-between;
     background-color: #D88F82;
@@ -272,7 +311,7 @@ footer {
 }
 
 #sectionCraft div.boxTextCraft {
-    width: 500px;
+    width: 700px;
 }
 
 #sectionCraft h4 {
@@ -295,6 +334,9 @@ footer {
 @media screen and (max-width: 1400px) {
     #sectionCraft div.boxImageCraft {
         width: 600px;
+    }
+    #sectionCraft div.boxTextCraft {
+        width: 500px;
     }
 }
 
@@ -337,6 +379,20 @@ footer {
     }
 }
 
+/* aca no entiendo, si uso max width con el selector pero sin valores y se rompe*/
+/* @media screen and (min-width: 320px) { 
+    #sectionCraft div.boxImageCraft {
+        width: 310px;
+    }
+    #sectionCraft h4 {
+        padding: 0;
+    }
+    #sectionCraft div.boxTextCraft a {
+        width: 220px;
+    }
+} */
+
+
 /* ----------------------------     Section BestSellers    ---------------- */
 
 #sectionBestSellers {
@@ -354,14 +410,20 @@ footer {
 }
 
 #sectionDelivery h3 {
-    margin-left: 4rem;
+    margin-left: 2rem;
     color: #D88F82;
 }
+
+#sectionDelivery div.boxTextDelivery {
+    width: 60%;
+}
+
+
 /* Sry por este choclo, pero como se haria ordenar el texto de una forma mas o menos asi? */
 
 #sectionDelivery div.boxTextDelivery span {
     display: block;
-    width: 700px;
+    width: auto;
     color: #D88F82;
 }
 
@@ -387,7 +449,7 @@ footer {
 #sectionDelivery div.boxTextDelivery span.textMoved3 {
     margin-top: 1rem;
     text-align: right;
-    margin-right: 16rem;
+    margin-right: 6rem;
 }
 
 #sectionDelivery div.boxTextDelivery span.textMoved4 {
@@ -398,31 +460,28 @@ footer {
 #sectionDelivery div.boxTextDelivery span.textMoved5 {
     margin-top: 1rem;
     text-align: right;
+    margin-right: 8rem;
 }
 
 #sectionDelivery div.boxTextDelivery span.textMoved6 {
     margin-top: 2rem;
-    margin-left: 7rem;
+    margin-left: 8rem;
 }
 
 #sectionDelivery div.boxTextDelivery span.textMoved7 {
     margin-top: 1rem;
-    margin-left: 4rem;
+    text-align: center;
+    margin-left: 10rem;
 }
 
 #sectionDelivery div.boxImageDelivery {
-    width: 750px;
-    padding-top: 3rem;
+    width: 45%;
+    display: flex;
+    align-items: center;
 }
 
 #sectionDelivery div.boxImageDelivery img {
     width: 100%;
-}
-
-@media screen and (max-width: 1400px) {
-    #sectionDelivery div.boxTextDelivery span {
-        width: 550px;
-    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -493,16 +552,32 @@ footer {
     }
 }
 
+/* @media screen and (min-width: 320px) {
+    #sectionDelivery {
+        padding: 2rem 0;
+    }
+    #sectionDelivery div.boxTextDelivery {
+        width: 315px;
+    }
+    #sectionDelivery div.boxTextDelivery h3 {
+        width: 150px;
+        margin: auto;
+    }
+    #sectionDelivery div.boxTextDelivery span {
+        font-size: 1.2rem;
+        width: 250px;
+    }
+} */
+
 /* ----------------------------     Section Contact Us    ---------------- */
 #sectionContactUs {
     background-color: #175F7E;
-    padding: 3rem 3rem 3rem 5rem;
+    padding: 3rem 3rem 3rem 3rem;
     display: flex;
-    justify-content: space-between;
 }
 
 #sectionContactUs div.boxTextContactUs {
-    width: 30%;
+    width: 20%;
 }
 
 #sectionContactUs div.boxTextContactUs h4 {
@@ -511,26 +586,29 @@ footer {
 
 #sectionContactUs div.boxTextContactUs a {
     display: block;
-    padding: 6rem 5rem;
+    padding: 6rem 0;
     text-decoration: none;
+    text-align: center;
 }
 
 #sectionContactUs div.boxImageContactUs {
-    width: 70%;
-    height: 900px;
+    width: 80%;
+    height: auto;
+    padding: 0 0 0 2rem;
     display: grid;
     grid-template-areas:
     "boxImage1 boxImage2"
     "boxImage1 boxImage3";
-    grid-template-columns: 30% 70%;
-    grid-template-rows: 40% 60%;
-    column-gap: 15px;
+    grid-template-columns: 1fr 2fr;
+    /* grid-template-rows: 40% 60%; */
+    gap: 15px;
 }
 
 #sectionContactUs div.boxImageContactUs div.boxImage1 {
     grid-area: boxImage1;
     display: flex;
     align-items: center;
+    width: auto;
 }
 
 #sectionContactUs div.boxImageContactUs div.boxImage1 img {
@@ -540,7 +618,7 @@ footer {
 
 #sectionContactUs div.boxImageContactUs div.boxImage2 {
     grid-area: boxImage2;
-    width: 500px;
+    width: 700px;
 }
 
 #sectionContactUs div.boxImageContactUs div.boxImage2 img {
@@ -550,7 +628,7 @@ footer {
 
 #sectionContactUs div.boxImageContactUs div.boxImage3 {
     grid-area: boxImage3;
-    width: 750px;
+    width: 850px;
 }
 
 #sectionContactUs div.boxImageContactUs div.boxImage3 img {
@@ -559,6 +637,10 @@ footer {
 }
 
 @media screen and (max-width: 1400px) {
+    #sectionContactUs div.boxImageContactUs div.boxImage2 {
+        grid-area: boxImage2;
+        width: 500px;
+    }
     #sectionContactUs div.boxImageContactUs div.boxImage3 {
         grid-area: boxImage3;
         width: 600px;
@@ -631,12 +713,12 @@ footer {
 
 #footerNavBar ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #footerNavBar ul li {
     list-style-type: none;
-    padding: 2rem 0;
+    padding: 1rem 3rem;
 }
 
 #footerNavBar ul li a {
@@ -646,8 +728,8 @@ footer {
 #boxFooter {
     display: flex;
     justify-content: space-between;
-    padding: 3rem 4rem;
-    width: 100%;
+    padding: 3rem 3rem;
+    align-items: center;
 }
 
 #boxFooter div.boxTextFooter1 {
@@ -660,6 +742,7 @@ footer {
 
 #boxFooter div.boxTextFooter2 a h2 {
     text-align: center;
+    margin: 0%;
 }
 
 #boxFooter div.boxTextFooter3 {
@@ -691,6 +774,7 @@ footer {
         padding: 2rem 0;
     }
 }
+
 
 /* -----------------------------------------   PRODUCTOS.HTML   -------------------*/
 /* -----------------------------------------   PRODUCTOS.HTML   -------------------*/
@@ -868,6 +952,44 @@ textarea {
     color: #ffffff;
     margin-top: 1rem;
 }
+
+/* -------------------------------- */
+/* From uiverse.io by @alexruix */
+/* .input-group {
+    position: relative;
+    background-color: #FF0000;
+}
+
+.input_nano {
+    border: solid 1.5px #9e9e9e;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #f5f5f5;
+    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+}
+
+.user-label_nano {
+    position: absolute;
+    left: 15px;
+    color: #e8e8e8;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+}
+
+.input_nano:focus, input:valid {
+    outline: none;
+    border: 1.5px solid #1a73e8;
+}
+
+.input_nano:focus ~ label, input:valid ~ label {
+    transform: translateY(-50%) scale(0.8);
+    background-color: #212121;
+    padding: 0 .2em;
+    color: #2196f3;
+} */
 
 /* -----------------------------------------   LOGIN.HTML   -------------------*/
 /* -----------------------------------------   LOGIN.HTML   -------------------*/
