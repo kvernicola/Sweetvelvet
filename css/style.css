@@ -103,7 +103,7 @@ div#boxHeaderNav nav ul li {
 
 footer {
     background-color: #FF0000;
-    padding: 2rem;
+    padding: 3rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -197,13 +197,6 @@ footer {
     justify-items: center;
 }
 
-/* #sectionFrontPage div.boxImageFP {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 4rem;
-} */
-
 #sectionFrontPage div.boxImageFP1 {
     width: 450px;
     margin-top: 100px;
@@ -235,9 +228,6 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
-    /* #sectionFrontPage {
-        padding: 1rem;
-    } */
     #sectionFrontPage div.boxImageFP1 {
         width: 250px;
     }
@@ -248,19 +238,19 @@ footer {
 
 @media screen and (max-width: 600px) {
     #sectionFrontPage div.boxImageFP {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-        height: 800px;
+        padding: 2rem;
+        display: grid;
+        grid-template-areas: 
+        "boxImageFP1"
+        "boxImageFP2";
+        grid-template-columns: 100%;
+        row-gap: 15px;
+        justify-items: center;
     }
     #sectionFrontPage div.boxImageFP1 {
-        width: 500px;
-        margin-top: 50px;
+        margin-top: 10px;
+        width: 310px;
     }
-    #sectionFrontPage div.boxImageFP2 {
-        width: 600px;
-    }    
     #sectionFrontPage h2 {
         font-size: 3.5rem;
         text-align: center;
@@ -295,7 +285,7 @@ footer {
 /* ------------------------Section Craft------------------------ */
 
 #sectionCraft {
-    padding: 5rem;
+    padding: 3rem;
     display: flex;
     justify-content: space-between;
     background-color: #D88F82;
@@ -303,6 +293,7 @@ footer {
 
 #sectionCraft div.boxImageCraft {
     width: 800px;
+    margin-left: 2rem;
 }
 
 #sectionCraft div.boxImageCraft img {
@@ -312,6 +303,7 @@ footer {
 
 #sectionCraft div.boxTextCraft {
     width: 700px;
+    margin-right: 2rem;
 }
 
 #sectionCraft h4 {
@@ -342,10 +334,12 @@ footer {
 
 @media screen and (max-width: 1024px) {
     #sectionCraft {
-        padding: 5rem;
+        padding: 3rem;
     }
     #sectionCraft div.boxImageCraft {
         width: 450px;
+        display: flex;
+        align-items: center;
     }
     #sectionCraft div.boxTextCraft {
         width: 380px;
@@ -354,14 +348,19 @@ footer {
 
 @media screen and (max-width: 600px) {
     #sectionCraft {
-        padding: 1rem 0;
+        padding: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0;
     }
+    #sectionCraft div.boxImageCraft {
+        width: fit-content;
+        margin: 0;
+    }
     #sectionCraft div.boxTextCraft {
-        width: 80%;
+        width: 90%;
+        margin: 2rem 0;
     }
     #sectionCraft h3, #sectionCraft h4 {
         text-align: center;
@@ -417,8 +416,6 @@ footer {
 #sectionDelivery div.boxTextDelivery {
     width: 60%;
 }
-
-
 /* Sry por este choclo, pero como se haria ordenar el texto de una forma mas o menos asi? */
 
 #sectionDelivery div.boxTextDelivery span {
@@ -494,7 +491,7 @@ footer {
     }
     #sectionDelivery div.boxTextDelivery span.textMoved1 {
         margin-top: 2rem;
-        margin-left: 2rem;
+        margin-left: 1rem;
     }
     
     #sectionDelivery div.boxTextDelivery span.textMoved2 {
@@ -505,7 +502,7 @@ footer {
     #sectionDelivery div.boxTextDelivery span.textMoved3 {
         margin-top: 1rem;
         text-align: right;
-        margin-right: 8rem;
+        margin-right: 4rem;
     }
     
     #sectionDelivery div.boxTextDelivery span.textMoved4 {
@@ -516,6 +513,7 @@ footer {
     #sectionDelivery div.boxTextDelivery span.textMoved5 {
         margin-top: 1rem;
         text-align: right;
+        margin-right: 3rem;
     }
     
     #sectionDelivery div.boxTextDelivery span.textMoved6 {
@@ -525,14 +523,14 @@ footer {
     
     #sectionDelivery div.boxTextDelivery span.textMoved7 {
         margin-top: 1rem;
-        margin-left: 2rem;
+        margin-left: 6rem;
     }
 }
 
 @media screen and (max-width: 600px) {
     #sectionDelivery {
         width: 100%;
-        padding: 3rem;
+        padding: 3rem 2rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -546,9 +544,6 @@ footer {
     }
     #sectionDelivery div.boxTextDelivery h3 {
         text-align: center;
-    }
-    #sectionDelivery div.boxTextDelivery span {
-        width: 100%;
     }
 }
 
@@ -577,7 +572,7 @@ footer {
 }
 
 #sectionContactUs div.boxTextContactUs {
-    width: 20%;
+    width: 25%;
 }
 
 #sectionContactUs div.boxTextContactUs h4 {
@@ -600,7 +595,6 @@ footer {
     "boxImage1 boxImage2"
     "boxImage1 boxImage3";
     grid-template-columns: 1fr 2fr;
-    /* grid-template-rows: 40% 60%; */
     gap: 15px;
 }
 
@@ -648,9 +642,12 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
-    #sectionContactUs div.boxTextContactUs h3,
+    #sectionContactUs div.boxTextContactUs {
+        width: 30%;
+    }
     #sectionContactUs div.boxTextContactUs h4 {
         margin-left: 0;
+        text-align: center;
     }
     #sectionContactUs div.boxImageContactUs div.boxImage2 {
         grid-area: boxImage2;
@@ -659,11 +656,6 @@ footer {
     #sectionContactUs div.boxImageContactUs div.boxImage3 {
         grid-area: boxImage3;
         width: 400px;
-    }
-    #sectionContactUs div.boxImageContactUs {
-        column-gap: 5px;
-        width: 70%;
-        height: 600px;
     }
 }
 
@@ -692,9 +684,11 @@ footer {
         grid-template-columns: 30% 70%;
         grid-template-rows: auto auto auto;
         row-gap: 15px;
+        padding: 0;
     }
     #sectionContactUs div.boxImageContactUs div.boxImage1 {
-        height: 500px;
+        width: 400px;
+        justify-self: center;
     }
     
     #sectionContactUs div.boxImageContactUs div.boxImage1 img {
@@ -755,6 +749,14 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+    #footerNavBar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #footerNavBar ul li {
+        padding: 0.5rem 3rem;
+    }
     #boxFooter {
         display: flex;
         flex-direction: column;
