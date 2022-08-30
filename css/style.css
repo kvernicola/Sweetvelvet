@@ -144,7 +144,8 @@ footer {
 
 
 @media screen and (max-width: 320px) {
-    div#boxHeaderNav h1 {
+    div#boxHeaderNav h1,
+    div#boxHeaderNav h2 {
         font-size: 25px;
     }
     div#boxHeaderNav header span {
@@ -266,6 +267,12 @@ footer {
         font-size: 30px;
         text-align: center;
     }
+    #sectionFrontPage div.boxImageFP1 img {
+        border-radius: 0px;
+    }
+    #sectionFrontPage div.boxImageFP2 img {
+        border-radius: 0px;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -356,6 +363,9 @@ footer {
     #sectionCraft div.boxImageCraft {
         width: fit-content;
         margin: 0;
+    }
+    #sectionCraft div.boxImageCraft img {
+        border-radius: 0px;
     }
     #sectionCraft div.boxTextCraft {
         width: 90%;
@@ -662,15 +672,21 @@ footer {
     
     #sectionContactUs div.boxImageContactUs div.boxImage1 img {
         height: 100%;
-        border-radius: 15px;
+        border-radius: 0px;
     }
     #sectionContactUs div.boxImageContactUs div.boxImage2 {
         width: 100%;
         justify-self: center;
     }
+    #sectionContactUs div.boxImageContactUs div.boxImage2 img {
+        border-radius: 0px;
+    }
     #sectionContactUs div.boxImageContactUs div.boxImage3 {
         width: 100%;
         justify-self: center;
+    }
+    #sectionContactUs div.boxImageContactUs div.boxImage3 img {
+        border-radius: 0px;
     }
 }
 
@@ -687,21 +703,18 @@ footer {
     }
     #sectionContactUs div.boxImageContactUs div.boxImage1 img {
         width: 100%;
-        border-radius: 0px;
     }
     #sectionContactUs div.boxImageContactUs div.boxImage2 {
         width: 310px;
     }
     #sectionContactUs div.boxImageContactUs div.boxImage2 img {
         width: 100%;
-        border-radius: 0px;
     }
     #sectionContactUs div.boxImageContactUs div.boxImage3 {
         width: 310px;
     }
     #sectionContactUs div.boxImageContactUs div.boxImage3 img {
         width: 100%;
-        border-radius: 0px;
     }
 }
 
@@ -804,6 +817,7 @@ footer {
 #sectionProducts h2 {
     text-align: center;
     margin-bottom: 4rem;
+    margin-left: 0%;
 }
 
 /*Probando Grid---Armada y distribuida a modo de prueba, tengo que rearmarla y volver a probar con template-area que no me salio :(*/
@@ -813,6 +827,7 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(15, 1fr);
     gap: 20px;
+    display: none;
 }
 
 div.grid div.gridBox {
@@ -970,6 +985,24 @@ textarea {
     margin-top: 1rem;
 }
 
+@media screen and (max-width: 420px) {
+    #contact_form {
+        display: flex;
+        flex-direction: column;
+    }
+    #mainContact legend {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    #mainContact .email {
+        width: 100%;
+    }
+    #mainContact .telephone {
+        width: 100%;
+    }
+}
+
+
 /* -------------------------------- */
 /* From uiverse.io by @alexruix */
 /* .input-group {
@@ -1021,12 +1054,12 @@ textarea {
     text-align: center;
 }
 
-#mainLogin legend {
+#login_form legend {
     text-align: right;
     margin-bottom: 1rem;
 }
 
-#mainLogin form {
+#login_form {
     border: 2px solid #ffffff;
     max-width: 768px;
     background-color: #D88F82;
@@ -1034,38 +1067,38 @@ textarea {
     padding: 3rem;
 }
 
-#mainLogin input {
+#login_form input {
     line-height: normal;
 }
 
-#mainLogin .username {
+#login_form .username {
     width: 45%;
     margin-bottom: 2rem;
 }
 
-#mainLogin .passw {
+#login_form .passw {
     width: 45%;
     margin-bottom: 1rem;
 }
 
-#mainLogin .checkbox {
+#login_form .checkbox {
     color: #ffffff;
     width: 45%;
     margin-bottom: 3rem;
 }
 
-#mainLogin input[type='submit'] {
+#login_form input[type='submit'] {
     background: none;
     font-size: 1rem;
     border-color: #ffffff;
     border-radius: 8px;
-    width: 25%;
+    width: 50%;
     color: #ffffff;
     margin-top: 3rem;
 }
 
-#mainLogin input[type='email'],
-#mainLogin input[type='password'] {
+#login_form input[type='email'],
+#login_form input[type='password'] {
 	background: #D88F82;
     border: none;
 	border-bottom: solid 2px #ffffff;
@@ -1082,5 +1115,25 @@ textarea {
 @media  screen and (max-width: 1400px) {
     #mainLogin {
         height: 530px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #login_form legend {
+        text-align: center;
+    }
+    #login_form .username {
+        width: 100%;
+    }
+    #login_form .passw {
+        width: 100%;
+    }
+    #login_form .checkbox {
+        width: 180px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    #login_form div.submit {
+        text-align: center;
     }
 }
