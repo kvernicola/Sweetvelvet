@@ -11,7 +11,7 @@ font-family: 'Source Code Pro', monospace;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 h1, h2, h3, h4 {
@@ -272,6 +272,12 @@ footer {
     }
     #sectionFrontPage div.boxImageFP2 img {
         border-radius: 0px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #sectionFrontPage div.boxImageFP2 {
+        display: none;
     }
 }
 
