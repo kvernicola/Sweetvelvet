@@ -90,7 +90,7 @@ div#boxHeaderNav nav ul a:visited {
 
 div#boxHeaderNav header span.front {
     color: white;
-    background: #a53e66;
+    background: #ff0000;
 }
 
 div#boxHeaderNav nav ul {
@@ -434,19 +434,6 @@ footer {
 
 #sectionDelivery button.buttonDelivery {
     margin: 3rem 0 3rem 6rem;
-}
-
-#sectionDelivery button.buttonDelivery span.front {
-    display: block;
-    position: relative;
-    padding: 12px 27px;
-    border-radius: 12px;
-    font-size: 1.1rem;
-    color: white;
-    background: #ff0000;
-    will-change: transform;
-    transform: translateY(-4px);
-    transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
 }
 
 #sectionDelivery div.boxTextDelivery a {
@@ -1062,7 +1049,7 @@ textarea {
 }
 
 
-/* -------------------------------- */
+/* ---------Aplicar estos efectos al form----------------------- */
 /* From uiverse.io by @alexruix */
 /* .input-group {
     position: relative;
