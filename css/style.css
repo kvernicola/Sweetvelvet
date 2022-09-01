@@ -11,7 +11,7 @@ font-family: 'Source Code Pro', monospace;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 h1, h2, h3, h4 {
@@ -428,7 +428,7 @@ footer {
 
 #sectionDelivery div.boxTextDelivery span {
     display: block;
-    width: auto;
+    /* width: auto; */
     color: #D88F82;
 }
 
@@ -854,8 +854,28 @@ footer {
 
 /* -----------------------------------------   PRODUCTOS.HTML   -------------------*/
 /* -----------------------------------------   PRODUCTOS.HTML   -------------------*/
+#mainProducts {
+    padding: 4rem;
+    background-color: #FF0000;
+}
+
+#mainProducts h1 {
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 4rem;
+}
+
+#mainProducts .boxImage {
+    width: 100%;
+    text-align: center;
+}
+
+#mainProducts .boxImage img {
+    width: 100%;
+}
 
 #sectionProducts {
+    display: none;
     padding: 4rem;
     background-color: #FF0000;
 }
@@ -873,7 +893,7 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(15, 1fr);
     gap: 20px;
-    display: none;
+    /* display: none; */
 }
 
 div.grid div.gridBox {
@@ -1223,7 +1243,7 @@ button {
 .front {
     display: block;
     position: relative;
-    padding: 12px 27px;
+    padding: 8px 2px;
     border-radius: 12px;
     font-size: 1.1rem;
     color: white;
