@@ -948,7 +948,18 @@ footer {
 -moz-box-shadow: 3px -7px 10px 1px rgba(0,0,0,0.75);
 }
 
-/* -----------------------------------------   CONTACTO.HTML   -------------------*/
+
+
+
+
+/* -----------------------------------------   HISTORIA.HTML   -------------------*/
+
+#sectionCraft .carousel-item img  {
+    max-height: 60vh;
+}
+
+
+
 /* -----------------------------------------   CONTACTO.HTML   -------------------*/
 #mainContact {
     background-color: #D88F82;
@@ -1099,13 +1110,17 @@ textarea {
 
 /* -----------------------------------------   LOGIN.HTML   -------------------*/
 /* -----------------------------------------   LOGIN.HTML   -------------------*/
-#mainLogin {
+
+div.backgroundLogin {
     background-image: url(../images/panadero.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#mainLogin {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    height: 850px;
+    height: 100vh;
 }
 
 #mainLogin h1 {

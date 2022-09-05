@@ -63,13 +63,42 @@
                 </nav>
             </div>
             <!----------------------------------------------    MAIN    ----------------------------->
-            <main id="mainLogin">
+            <div class="container-fluid p-0">
+                <div class="row backgroundLogin">
+                    <div class="col-8">
+                        <main id="mainLogin">
+                            <h1>&bull; Iniciar Sesion &bull; </h1>
+                            <form action="#" method="post" enctype="multipart/form-data" id="login_form">
+                                <legend>Ingresa tus datos</legend>
+                                <div class="username">
+                                    <label for="username"></label>
+                                    <input type="email" name="email" id="username" placeholder="usuario / email" required> <!--Puede llevar 2 types?-->
+                                </div>
+                                <div class="passw">
+                                    <label for="password"></label>
+                                    <input type="password" placeholder="Password" name="password" id="password_input">
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" name="conectado" id="conectado">
+                                    <label for="conectado">Mantenerme conectado</label>
+                                </div>
+                                <div class="submit">
+                                    <input type="submit" value="Iniciar Sesion" id="button_form">
+                                </div>
+                            </form>
+                        </main>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- <main id="mainLogin">
                 <h1>&bull; Iniciar Sesion &bull; </h1>
                 <form action="#" method="post" enctype="multipart/form-data" id="login_form">
                     <legend>Ingresa tus datos</legend>
                     <div class="username">
                         <label for="username"></label>
-                        <input type="email" name="email" id="username" placeholder="usuario / email" required> <!--Puede llevar 2 types?-->
+                        <input type="email" name="email" id="username" placeholder="usuario / email" required>
                     </div>
                     <div class="passw">
                         <label for="password"></label>
@@ -83,7 +112,7 @@
                         <input type="submit" value="Iniciar Sesion" id="button_form">
                     </div>
                 </form>
-            </main>
+            </main> -->
             <!-------------------------------------------      FOOTER     ---------------------------->
             <footer>
                 <div id="footerNavBar">
@@ -126,3 +155,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     </body>
 </html>
+
+
+
+

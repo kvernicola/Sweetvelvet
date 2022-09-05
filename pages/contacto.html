@@ -63,74 +63,80 @@
                 </nav>
             </div>
             <!----------------------------------------------    MAIN    ----------------------------->
-            <main id="mainContact">
-                <h1>&bull; Contactanos &bull; </h1>
-                <form action="#" method="post" enctype="multipart/form-data" id="contact_form">
-                    <legend>Datos de contacto</legend>
-                    <div class="name">
-                        <label for="name"></label>
-                        <input type="text" placeholder="Mi nombre es..." name="name" id="name_input">
+            <div class="container-fluid p-0">
+                <div class="row">
+                    <div class="col-12">
+                        <main id="mainContact">
+                            <h1>&bull; Contactanos &bull; </h1>
+                            <form action="#" method="post" enctype="multipart/form-data" id="contact_form">
+                                <legend>Datos de contacto</legend>
+                                <div class="name">
+                                    <label for="name"></label>
+                                    <input type="text" placeholder="Mi nombre es..." name="name" id="name_input">
+                                </div>
+                                <div class="email">
+                                    <label for="mail"></label>
+                                    <input required type="email" placeholder="Mi email es..." name="email" id="email_input" required>
+                                </div>
+                                <div class="telephone">
+                                    <label for="phonenumber"></label>
+                                    <input type="tel" placeholder="Mi numero es..." name="tel" id="telephone_input" required>
+                                </div>
+                                <div class="subject">
+                                    <label for="subject"></label>
+                                    <select name="subject" id="subject_input" required>
+                                        <option value="" selected disabled>Me gustaria...</option>
+                                        <option value="Bla">Bla</option>
+                                        <option value="Ble">Bla</option>
+                                        <option value="Bli">Bla</option>
+                                        <option value="Blo">Bla</option>
+                                    </select>
+                                </div>
+                                <div class="message">
+                                    <label for="message"></label>
+                                    <textarea name="message" placeholder="Dejanos tu mensaje" id="message_input" cols="30" rows="5"></textarea>
+                                </div>
+                                <div>
+                                    <span>Desea recibir nuestras novedades?</span>
+                                </div>
+                                <div>
+                                    <label for="si"><strong>Si</strong></label>
+                                    <input type="radio" name="Newsletter" id="si" value="si">
+                                    <label for="no"><strong>No</strong></label>
+                                    <input type="radio" name="Newsletter" id="no" value="no">
+                                </div>
+                                <div>
+                                    <span>Seleccione sus intereses</span>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" name="pasteleria" id="cakeshop">
+                                    <label for="cakeshop">Pasteleria</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" name="tortas" id="cakes">
+                                    <label for="cakes">Tortas</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" name="lingotes" id="ingots">
+                                    <label for="ingots">Lingotes</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" name="panificacion" id="baking">
+                                    <label for="baking">Panificacion</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label for="agree">Acepta los terminos y condiciones</label>
+                                    <input type="checkbox" name="agree" id="agree">
+                                </div>
+                                <div><!--Boton enviar y reset-->
+                                    <input type="submit" value="Enviar">
+                                    <input type="reset" value="Borrar formulario">
+                                </div>
+                            </form>
+                        </main>
                     </div>
-                    <div class="email">
-                        <label for="mail"></label>
-                        <input required type="email" placeholder="Mi email es..." name="email" id="email_input" required>
-                    </div>
-                    <div class="telephone">
-                        <label for="phonenumber"></label>
-                        <input type="tel" placeholder="Mi numero es..." name="tel" id="telephone_input" required>
-                    </div>
-                    <div class="subject">
-                        <label for="subject"></label>
-                        <select name="subject" id="subject_input" required>
-                            <option value="" selected disabled>Me gustaria...</option>
-                            <option value="Bla">Bla</option>
-                            <option value="Ble">Bla</option>
-                            <option value="Bli">Bla</option>
-                            <option value="Blo">Bla</option>
-                        </select>
-                    </div>
-                    <div class="message">
-                        <label for="message"></label>
-                        <textarea name="message" placeholder="Dejanos tu mensaje" id="message_input" cols="30" rows="5"></textarea>
-                    </div>
-                    <div>
-                        <span>Desea recibir nuestras novedades?</span>
-                    </div>
-                    <div>
-                        <label for="si"><strong>Si</strong></label>
-                        <input type="radio" name="Newsletter" id="si" value="si">
-                        <label for="no"><strong>No</strong></label>
-                        <input type="radio" name="Newsletter" id="no" value="no">
-                    </div>
-                    <div>
-                        <span>Seleccione sus intereses</span>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" name="pasteleria" id="cakeshop">
-                        <label for="cakeshop">Pasteleria</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" name="tortas" id="cakes">
-                        <label for="cakes">Tortas</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" name="lingotes" id="ingots">
-                        <label for="ingots">Lingotes</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" name="panificacion" id="baking">
-                        <label for="baking">Panificacion</label>
-                    </div>
-                    <div class="checkbox">
-                        <label for="agree">Acepta los terminos y condiciones</label>
-                        <input type="checkbox" name="agree" id="agree">
-                    </div>
-                    <div><!--Boton enviar y reset-->
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Borrar formulario">
-                    </div>
-                </form>
-            </main>
+                </div>
+            </div>
             <!-------------------------------------------      FOOTER     ---------------------------->
             <footer>
                 <div id="footerNavBar">
