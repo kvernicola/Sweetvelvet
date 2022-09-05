@@ -25,11 +25,13 @@ h1, h2, h3, h4 {
 p, a, li, span, legend {
     font-family: 'Acme', sans-serif;
     font-size: 1.7rem;
-    color: white;
+    color: #ffffff;
 }
 
-a:visited {
-    color: #ffffff;
+
+
+img, .card {
+    border-radius: 15px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -245,20 +247,13 @@ header div.boxHeaderNav a:visited {
     font-size: 30px;
 }
 
-#sectionFrontPage div.boxImageFP {
+/* #sectionFrontPage div.boxImageFP {
     padding: 2rem;
-    display: grid;
-    grid-template-areas: 
-    "boxImageFP1 boxImageFP2 boxImageFP2";
-    grid-template-columns: 1fr 2fr 2fr;
-    column-gap: 15px;
-    justify-items: center;
 }
 
 #sectionFrontPage div.boxImageFP1 {
-    width: 450px;
+    width: 550px;
     margin-top: 100px;
-    grid-area: boxImageFP1;
 }
 
 #sectionFrontPage div.boxImageFP1 img {
@@ -267,16 +262,18 @@ header div.boxHeaderNav a:visited {
 }
 
 #sectionFrontPage div.boxImageFP2 {
-    height: 550px;
-    grid-area: boxImageFP2;
+    width: 860px;
+    height: 440px;
 }
 
 #sectionFrontPage div.boxImageFP2 img {
+    width: 100%;
     height: 100%;
+    object-fit: cover;
     border-radius: 15px;
-}
+} */
 
-@media screen and (max-width: 1400px) {
+/* @media screen and (max-width: 1400px) {
     #sectionFrontPage div.boxImageFP1 {
         width: 350px;
     }
@@ -349,18 +346,18 @@ header div.boxHeaderNav a:visited {
     #sectionFrontPage h4 {
         width: 240px;
     }
-}
+} */
 
 /* ------------------------Section Craft------------------------ */
 
 #sectionCraft {
     padding: 3rem;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     background-color: #D88F82;
 }
 
-#sectionCraft div.boxImageCraft {
+/* #sectionCraft div.boxImageCraft {
     width: 800px;
     margin-left: 2rem;
 }
@@ -383,25 +380,27 @@ header div.boxHeaderNav a:visited {
 #sectionCraft p {
     text-align: justify;
     line-height: 2.5rem;
-}
+} */
 
-#sectionCraft a {
+#sectionCraft a,
+#sectionCraft a:visited {
     display: block;
     width: 400px;
     text-decoration: none;
     margin: 4rem auto 0;
-}
+    color: #ffffff;
+} 
 
-@media screen and (max-width: 1400px) {
+/* @media screen and (max-width: 1400px) {
     #sectionCraft div.boxImageCraft {
         width: 600px;
     }
     #sectionCraft div.boxTextCraft {
         width: 500px;
     }
-}
+} */
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
     #sectionCraft {
         padding: 3rem;
     }
@@ -448,7 +447,7 @@ header div.boxHeaderNav a:visited {
         text-decoration: none;
         text-align: center;
     }
-}
+} */
 
 /* ----------------------------     Section BestSellers    ---------------- */
 
@@ -461,8 +460,8 @@ header div.boxHeaderNav a:visited {
 
 #sectionDelivery {
     padding: 3rem;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     background-color: white;
 }
 
@@ -472,7 +471,8 @@ header div.boxHeaderNav a:visited {
 }
 
 #sectionDelivery div.boxTextDelivery {
-    width: 60%;
+    display: flex;
+    flex-direction: column;
 }
 
 #sectionDelivery div.boxTextDelivery span {
@@ -481,7 +481,8 @@ header div.boxHeaderNav a:visited {
 }
 
 #sectionDelivery div.buttonDelivery {
-    margin: 3rem 0 3rem 6rem;
+    margin: 3rem 0 3rem 0rem;
+    align-self: center;
 }
 
 #sectionDelivery div.boxTextDelivery a {
@@ -528,16 +529,11 @@ header div.boxHeaderNav a:visited {
 }
 
 #sectionDelivery div.boxImageDelivery {
-    width: 45%;
-    display: flex;
-    align-items: center;
+    align-self: center;
 }
 
-#sectionDelivery div.boxImageDelivery img {
-    width: 100%;
-}
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
     #sectionDelivery div.boxTextDelivery {
         width: 60%;
     }
@@ -581,9 +577,9 @@ header div.boxHeaderNav a:visited {
         margin-top: 1rem;
         margin-left: 6rem;
     }
-}
+} */
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     #sectionDelivery {
         width: 100%;
         padding: 3rem 2rem;
@@ -601,23 +597,23 @@ header div.boxHeaderNav a:visited {
     #sectionDelivery div.boxTextDelivery h3 {
         text-align: center;
     }
-}
+} */
 
 /* ----------------------------     Section Contact Us    ---------------- */
 #sectionContactUs {
     background-color: #175F7E;
-    padding: 3rem 3rem 3rem 3rem;
-    display: flex;
+    padding: 3rem;
 }
 
 #sectionContactUs div.boxTextContactUs {
-    width: 25%;
-    /* align-self: center; */
-    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #sectionContactUs div.boxTextContactUs h4 {
-    padding: 3rem 0;
+    text-align: center;
+    margin: 0 0 5rem 0;
 }
 
 #sectionContactUs div.boxTextContactUs a {
@@ -629,14 +625,14 @@ header div.boxHeaderNav a:visited {
 #sectionContactUs div.boxTextContactUs button.buttonContactUs {
     width: 190px;
     color: #090909;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 0.5rem;
     font-size: 18px;
     border-radius: 0.5rem;
     background: #e8e8e8;
     border: 1px solid #e8e8e8;
     transition: all .3s;
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
-    margin-left: 6rem;
+    margin-top: 5rem;
 }
 
 #sectionContactUs div.boxTextContactUs button.buttonContactUs:hover {
@@ -647,7 +643,11 @@ header div.boxHeaderNav a:visited {
     box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
 }
 
-#sectionContactUs div.boxImageContactUs {
+#sectionContactUs div.boxImage1 {
+    align-self: center;
+}
+
+/* #sectionContactUs div.boxImageContactUs {
     width: 80%;
     height: auto;
     padding: 0 0 0 2rem;
@@ -657,41 +657,41 @@ header div.boxHeaderNav a:visited {
     "boxImage1 boxImage3";
     grid-template-columns: 1fr 2fr;
     gap: 15px;
-}
+} */
 
-#sectionContactUs div.boxImageContactUs div.boxImage1 {
+/* #sectionContactUs div.boxImageContactUs div.boxImage1 {
     grid-area: boxImage1;
     display: flex;
     align-items: center;
     width: auto;
-}
+} */
 
-#sectionContactUs div.boxImageContactUs div.boxImage1 img {
+/* #sectionContactUs div.boxImageContactUs div.boxImage1 img {
     width: 100%;
     border-radius: 15px;
-}
+} */
 
-#sectionContactUs div.boxImageContactUs div.boxImage2 {
+/* #sectionContactUs div.boxImageContactUs div.boxImage2 {
     grid-area: boxImage2;
     width: 700px;
-}
+} */
 
-#sectionContactUs div.boxImageContactUs div.boxImage2 img {
+/* #sectionContactUs div.boxImageContactUs div.boxImage2 img {
     width: 100%;
     border-radius: 15px;
-}
+} */
 
-#sectionContactUs div.boxImageContactUs div.boxImage3 {
+/* #sectionContactUs div.boxImageContactUs div.boxImage3 {
     grid-area: boxImage3;
     width: 850px;
-}
+} */
 
-#sectionContactUs div.boxImageContactUs div.boxImage3 img {
+/* #sectionContactUs div.boxImageContactUs div.boxImage3 img {
     width: 100%;
     border-radius: 15px;
-}
+} */
 
-@media screen and (max-width: 1400px) {
+/* @media screen and (max-width: 1400px) {
     #sectionContactUs div.boxImageContactUs div.boxImage2 {
         grid-area: boxImage2;
         width: 500px;
@@ -703,9 +703,9 @@ header div.boxHeaderNav a:visited {
     #sectionContactUs div.boxTextContactUs button.buttonContactUs {
         margin-left: 4rem;
     }
-}
+} */
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
     #sectionContactUs div.boxTextContactUs {
         width: 30%;
     }
@@ -724,9 +724,9 @@ header div.boxHeaderNav a:visited {
     #sectionContactUs div.boxTextContactUs button.buttonContactUs {
         margin-left: 2rem;
     }
-}
+} */
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     #sectionContactUs {
         padding: 3rem 2rem 3rem 2rem;
         flex-direction: column;
@@ -780,9 +780,9 @@ header div.boxHeaderNav a:visited {
     #sectionContactUs div.boxImageContactUs div.boxImage3 img {
         border-radius: 0px;
     }
-}
+} */
 
-@media screen and (max-width: 320px) {
+/* @media screen and (max-width: 320px) {
     #sectionContactUs {
         padding: 1rem 0;
         display: flex;
@@ -810,13 +810,19 @@ header div.boxHeaderNav a:visited {
     #sectionContactUs div.boxImageContactUs div.boxImage3 img {
         width: 100%;
     }
-}
+} */
 
 /* ---------------------------------   FOOTER     ------------------- */
 
 footer {
     background-color: #FF0000;
     padding: 3rem;
+}
+
+#footerNavBar a,
+#footerNavBar a:visited {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 #footerNavBar ul {
@@ -829,15 +835,21 @@ footer {
     padding: 1rem 3rem;
 }
 
-#footerNavBar ul li a {
+/* #footerNavBar ul li a {
     text-decoration: none;
-}
+} */
 
 #boxFooter {
     display: flex;
     justify-content: space-between;
     padding: 3rem 3rem;
     align-items: center;
+}
+
+#boxFooter a,
+#boxFooter a:visited {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 #boxFooter div.boxTextFooter1 {
@@ -858,9 +870,9 @@ footer {
     text-align: right;
 }
 
-#boxFooter div a {
+/* #boxFooter a {
     text-decoration: none;
-}
+} */
 
 @media screen and (max-width: 875px) {
     #footerNavBar ul {
