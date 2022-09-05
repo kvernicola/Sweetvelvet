@@ -6,6 +6,9 @@ font-family: 'Source Code Pro', monospace;
 */
 /* -----------------------------------------   INDEX.HTML   -------------------*/
 /*---------------------------    1920px responvive 320px     -------------------*/
+body {
+    background-color: rgb(41, 131, 131);
+}
 
 * {
     margin: 0;
