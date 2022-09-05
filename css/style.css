@@ -6,9 +6,7 @@ font-family: 'Source Code Pro', monospace;
 */
 /* -----------------------------------------   INDEX.HTML   -------------------*/
 /*---------------------------    1920px responvive 320px     -------------------*/
-body {
-    background-color: rgb(41, 131, 131);
-}
+
 
 * {
     margin: 0;
@@ -30,13 +28,17 @@ p, a, li, span, legend {
     color: white;
 }
 
+a:visited {
+    color: #ffffff;
+}
+
 @media screen and (max-width: 1024px) {
     p, a, li, span {
         font-size: 1.3rem;    
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 900px) {
     h1, h2, h3, h4 {
         font-size: 35px;
         margin-left: 10px;
@@ -44,7 +46,32 @@ p, a, li, span, legend {
     p, a, li, span {
         font-size: 1.3rem;    
     }
+    header div.boxHeaderNav button.animate__animated {
+        margin-left: 2rem;
+    }
 }
+
+@media screen and (max-width: 620px) {
+    h1, h2, h3, h4 {
+        font-size: 25px;
+        margin-left: 0px;
+    }
+    p, a, li, span {
+        font-size: 1rem;    
+    }
+}
+
+@media screen and (max-width: 410px) {
+    header div.boxHeaderNav h1,
+    header div.boxHeaderNav h2 {
+        font-size: 20px;
+        width: max-content;
+    }
+    header div.boxHeaderNav a {
+        font-size: 0.9rem;    
+    }
+}
+
 
 hr {
     width: 92%;
@@ -105,15 +132,37 @@ div#boxHeaderNav nav ul li {
     padding: 0 2rem;
 }
 
-
-footer {
-    background-color: #FF0000;
-    padding: 3rem;
+/* ----------------------------Menu Boostrap--------------------------------- */
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
 }
+
+header div.boxHeaderNav {
+    background: #FF0000;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+header div.boxHeaderNav div.boxLogo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div.boxHeaderNav a,
+header div.boxHeaderNav a:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 
 @media screen and (max-width: 1024px) {
     div#boxHeaderNav header span {
         margin-right: 10%;
+        margin: 0%;
     }
 }
 
@@ -144,12 +193,6 @@ footer {
     div#boxHeaderNav header .imgMenu ul.menuHover li:hover ul {
         display: block;
         background-color: #FF0000;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    div#boxHeaderNav header span {
-        margin: 0%;
     }
 }
 
@@ -434,11 +477,10 @@ footer {
 
 #sectionDelivery div.boxTextDelivery span {
     display: block;
-    /* width: auto; */
     color: #D88F82;
 }
 
-#sectionDelivery button.buttonDelivery {
+#sectionDelivery div.buttonDelivery {
     margin: 3rem 0 3rem 6rem;
 }
 
@@ -772,6 +814,11 @@ footer {
 
 /* ---------------------------------   FOOTER     ------------------- */
 
+footer {
+    background-color: #FF0000;
+    padding: 3rem;
+}
+
 #footerNavBar ul {
     display: flex;
     justify-content: space-between;
@@ -815,7 +862,7 @@ footer {
     text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 875px) {
     #footerNavBar ul {
         display: flex;
         flex-direction: column;
@@ -1139,7 +1186,8 @@ textarea {
 
 /* ----------------------------------------------------------------------- */
 /*---------------------------------- From uiverse.io ----------------------*/
-button {
+div.pedirAhora {
+    width: max-content;
     position: relative;
     border: none;
     background: transparent;
@@ -1150,7 +1198,7 @@ button {
     user-select: none;
     touch-action: manipulation;
 }
-.shadow {
+div.pedirAhora .shadow {
     position: absolute;
     top: 0;
     left: 0;
@@ -1163,7 +1211,7 @@ button {
     transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
 }
 
-.edge {
+div.pedirAhora .edge {
     position: absolute;
     top: 0;
     left: 0;
@@ -1173,7 +1221,7 @@ button {
     background: linear-gradient(to left, hsl(340deg 100% 16%) 0%, hsl(340deg 100% 32%) 8%, hsl(340deg 100% 32%) 92%, hsl(340deg 100% 16%) 100%);
 }
 
-.front {
+div.pedirAhora .front {
     display: block;
     position: relative;
     padding: 8px 2px;
@@ -1186,32 +1234,31 @@ button {
     transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
 }
 
-button:hover {
+div.pedirAhora:hover {
     filter: brightness(110%);
 }
 
-button:hover .front {
+div.pedirAhora:hover .front {
     transform: translateY(-6px);
     transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
 }
 
-button:active .front {
+div.pedirAhora:active .front {
     transform: translateY(-2px);
     transition: transform 34ms;
 }
 
-button:hover .shadow {
+div.pedirAhora:hover .shadow {
     transform: translateY(4px);
     transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
 }
 
-button:active .shadow {
+div.pedirAhora:active .shadow {
     transform: translateY(1px);
     transition: transform 34ms;
 }
 
-button:focus:not(:focus-visible) {
+div.pedirAhora:focus:not(:focus-visible) {
     outline: none;
 }
-
 

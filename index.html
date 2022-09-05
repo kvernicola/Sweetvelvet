@@ -15,7 +15,50 @@
 
     <body>
         <div>
-            <div id="boxHeaderNav">
+            <header>
+                <div class="container-fluid p-0">
+                    <div class="row boxHeaderNav">
+                        <div class="col-4">
+                            <div class="boxLogo ms-5">
+                                <a href="./index.html"><h1>Sweetvelvet<br>by Paula</h1></a>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="animate__animated animate__zoomInUp animate__delay-1s pedirAhora">
+                                <span class="shadow"></span>
+                                <span class="edge"></span>
+                                <span class="front text"><a href="./pages/contacto.html">Pedir ahora</a></span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <nav class="navbar navbar-expand-lg">
+                                <div class="container-fluid">
+                                    <button class="navbar-toggler me-1 ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarNav">
+                                        <ul class="navbar-nav me-4 ms-auto">
+                                            <li class="nav-item ms-4 me-4">
+                                                <a class="nav-link" aria-current="page" href="./pages/productos.html">Productos</a>
+                                            </li>
+                                            <li class="nav-item ms-4 me-4">
+                                                <a class="nav-link" href="./pages/historia.html">Historia</a>
+                                            </li>
+                                            <li class="nav-item ms-4 me-4">
+                                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                                            </li>
+                                            <li class="nav-item ms-4 me-4">
+                                                <a class="nav-link" href="./pages/login.html">Login</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- <div id="boxHeaderNav">
                 <header>
                     <a href="./index.html"><h1>Sweetvelvet<br>by Paula</h1></a>
                     <button class="animate__animated animate__zoomInUp animate__delay-2s">
@@ -23,12 +66,11 @@
                         <span class="edge"></span>
                         <span class="front text"><a href="./pages/contacto.html">Pedir ahora</a></span>
                     </button>
-                    <!-- <span><a href="./pages/contacto.html">Pedir ahora</a></span> -->
                     <div class="imgMenu">
                         <ul class="menuHover">
                             <li>
                                 <a href="#"><img src="./images/imgMenu.png" alt="icono menu"></a>
-                                <ul> <!--Links del menu sin destino por ahora-->
+                                <ul>
                                     <li>
                                         <a href="./pages/productos.html">Productos</a>
                                     </li>
@@ -62,7 +104,7 @@
                         </li>
                     </ul>
                 </nav>
-            </div>
+            </div> -->
             
             <!-- ------------------------------------------   Seccion FrontPage   ------------>
             <section id="sectionFrontPage">
@@ -110,11 +152,11 @@
                     <span class="textMoved5">alcanzamos.</span>
                     <span class="textMoved6">Hacemos envios de Lunes a Viernes</span>
                     <span class="textMoved7">de 8am a 8pm.</span>
-                    <button class="buttonDelivery">
+                    <div class="buttonDelivery pedirAhora">
                         <span class="shadow"></span>
                         <span class="edge"></span>
                         <span class="front text"><a href="./pages/contacto.html">Pedir ahora</a></span>
-                    </button>
+                    </div>
                     <!-- <a href="./pages/contacto.html">Pedir ahora</a> -->
                 </div>
                 <div class="boxImageDelivery">
