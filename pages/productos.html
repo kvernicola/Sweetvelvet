@@ -17,50 +17,58 @@
         <div>
             <div id="boxHeaderNav">
                 <header>
-                    <a href="../index.html"><h2>Sweetvelvet<br>by Paula</h2></a>
+                    <div class="boxLogo">
+                        <a href="../index.html">
+                            <h2>Sweetvelvet</h2>
+                            <h2>by Paula</h2>
+                        </a>
+                    </div>
                     <div class="animate__animated animate__zoomInUp pedirAhora">
                         <span class="shadow"></span>
                         <span class="edge"></span>
                         <span class="front text"><a href="../pages/contacto.html">Pedir ahora</a></span>
                     </div>
-                    <div class="imgMenu">
-                        <ul class="menuHover">
+                    <nav>
+                        <ul>
+                            <!-- <li>
+                                <a href="../pages/productos.html">Productos</a>
+                            </li> -->
                             <li>
-                                <a href="#"><img src="../images/imgMenu.png" alt="icono menu"></a>
-                                <ul> <!--Links del menu sin destino por ahora-->
-                                    <li>
-                                        <a href="../pages/productos.html">Productos</a>
-                                    </li>
-                                    <li>
-                                        <a href="../pages/historia.html">Historia</a>
-                                    </li>
-                                    <li>
-                                        <a href="../pages/contacto.html">Contacto</a>
-                                    </li>
-                                    <li>
-                                        <a href="../pages/login.html">Login</a>
-                                    </li>
-                                </ul>
+                                <a href="../pages/historia.html">Historia</a>
+                            </li>
+                            <li>
+                                <a href="../pages/contacto.html">Contacto</a>
+                            </li>
+                            <li>
+                                <a href="../pages/login.html">Login</a>
                             </li>
                         </ul>
+                    </nav>
+                    <div id="menu">
+                        <div id="menu-bar" onclick="menuOnClick()">
+                            <div id="bar1" class="bar"></div>
+                            <div id="bar2" class="bar"></div>
+                            <div id="bar3" class="bar"></div>
+                        </div>
+                        <div class="nav" id="nav">
+                            <ul>
+                                <li>
+                                    <a href="../index.html">Inicio</a>
+                                </li>
+                                <li>
+                                    <a href="../pages/historia.html">Historia</a>
+                                </li>
+                                <li>
+                                    <a href="../pages/contacto.html">Contacto</a>
+                                </li>
+                                <li>
+                                    <a href="../pages/login.html">Login</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </header>    
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="../pages/productos.html">Productos</a>
-                        </li>
-                        <li>
-                            <a href="../pages/historia.html">Historia</a>
-                        </li>
-                        <li>
-                            <a href="../pages/contacto.html">Contacto</a>
-                        </li>
-                        <li>
-                            <a href="../pages/login.html">Login</a>
-                        </li>
-                    </ul>
-                </nav>
+                    <div class="menu-bg" id="menu-bg"></div>
+                </header>
             </div>
             
             <main id="mainProducts">
@@ -236,5 +244,12 @@
             </footer>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <script>
+            function menuOnClick() {
+                document.getElementById("menu-bar").classList.toggle("change");
+                document.getElementById("nav").classList.toggle("change");
+                document.getElementById("menu-bg").classList.toggle("change-bg");
+            }
+        </script>
     </body>
 </html>

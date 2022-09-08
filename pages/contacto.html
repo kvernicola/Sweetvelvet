@@ -17,50 +17,58 @@
         <div>
             <div id="boxHeaderNav">
                 <header>
-                    <a href="../index.html"><h2>Sweetvelvet<br>by Paula</h2></a>
+                    <div class="boxLogo">
+                        <a href="../index.html">
+                            <h2>Sweetvelvet</h2>
+                            <h2>by Paula</h2>
+                        </a>
+                    </div>
                     <div class="animate__animated animate__zoomInUp pedirAhora">
                         <span class="shadow"></span>
                         <span class="edge"></span>
                         <span class="front text"><a href="../pages/contacto.html">Pedir ahora</a></span>
                     </div>
-                    <div class="imgMenu">
-                        <ul class="menuHover">
+                    <nav>
+                        <ul>
                             <li>
-                                <a href="#"><img src="../images/imgMenu.png" alt="icono menu"></a>
-                                <ul> <!--Links del menu sin destino por ahora-->
-                                    <li>
-                                        <a href="../pages/productos.html">Productos</a>
-                                    </li>
-                                    <li>
-                                        <a href="../pages/historia.html">Historia</a>
-                                    </li>
-                                    <li>
-                                        <a href="../pages/contacto.html">Contacto</a>
-                                    </li>
-                                    <li>
-                                        <a href="../pages/login.html">Login</a>
-                                    </li>
-                                </ul>
+                                <a href="../pages/productos.html">Productos</a>
+                            </li>
+                            <li>
+                                <a href="../pages/historia.html">Historia</a>
+                            </li>
+                            <!-- <li>
+                                <a href="../pages/contacto.html">Contacto</a>
+                            </li> -->
+                            <li>
+                                <a href="../pages/login.html">Login</a>
                             </li>
                         </ul>
+                    </nav>
+                    <div id="menu">
+                        <div id="menu-bar" onclick="menuOnClick()">
+                            <div id="bar1" class="bar"></div>
+                            <div id="bar2" class="bar"></div>
+                            <div id="bar3" class="bar"></div>
+                        </div>
+                        <div class="nav" id="nav">
+                            <ul>
+                                <li>
+                                    <a href="../index.html">Inicio</a>
+                                </li>
+                                <li>
+                                    <a href="../pages/productos.html">Productos</a>
+                                </li>
+                                <li>
+                                    <a href="../pages/historia.html">Historia</a>
+                                </li>
+                                <li>
+                                    <a href="../pages/login.html">Login</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </header>    
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="../pages/productos.html">Productos</a>
-                        </li>
-                        <li>
-                            <a href="../pages/historia.html">Historia</a>
-                        </li>
-                        <li>
-                            <a href="../pages/contacto.html">Contacto</a>
-                        </li>
-                        <li>
-                            <a href="../pages/login.html">Login</a>
-                        </li>
-                    </ul>
-                </nav>
+                    <div class="menu-bg" id="menu-bg"></div>
+                </header>
             </div>
             <!----------------------------------------------    MAIN    ----------------------------->
             <div class="container-fluid p-0">
@@ -71,8 +79,17 @@
                             <form action="#" method="post" enctype="multipart/form-data" id="contact_form">
                                 <legend>Datos de contacto</legend>
                                 <div class="name">
-                                    <label for="name"></label>
-                                    <input type="text" placeholder="Mi nombre es..." name="name" id="name_input">
+                                    <label for="name">
+                                        <!-- <span style="transition-delay:0ms">U</span>
+                                        <span style="transition-delay:50ms">s</span>
+                                        <span style="transition-delay:100ms">e</span>
+                                        <span style="transition-delay:150ms">r</span>
+                                        <span style="transition-delay:200ms">n</span>
+                                        <span style="transition-delay:250ms">a</span>
+                                        <span style="transition-delay:300ms">m</span>
+                                        <span style="transition-delay:350ms">e</span> -->
+                                    </label>
+                                    <input type="text" name="name"  placeholder="Mi nombre es..." id="name_input">
                                 </div>
                                 <div class="email">
                                     <label for="mail"></label>
@@ -128,7 +145,7 @@
                                     <label for="agree">Acepta los terminos y condiciones</label>
                                     <input type="checkbox" name="agree" id="agree">
                                 </div>
-                                <div><!--Boton enviar y reset-->
+                                <div>
                                     <input type="submit" value="Enviar">
                                     <input type="reset" value="Borrar formulario">
                                 </div>
@@ -177,10 +194,12 @@
             </footer>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <script>
+            function menuOnClick() {
+                document.getElementById("menu-bar").classList.toggle("change");
+                document.getElementById("nav").classList.toggle("change");
+                document.getElementById("menu-bg").classList.toggle("change-bg");
+            }
+        </script>
     </body>
 </html>
-
-<!-- <div class="input-group">
-    <input required="" type="text" name="text" autocomplete="off" class="input_nano">
-    <label class="user-label_nano">First Name</label>
-</div> -->
