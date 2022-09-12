@@ -1,19 +1,7 @@
-/*
-font-family: 'Acme', sans-serif;
-font-family: 'Actor', sans-serif;
-font-family: 'Dancing Script', cursive;
-font-family: 'Source Code Pro', monospace;
-*/
 /* -----------------------------------------   INDEX.HTML   -------------------*/
 /*--------GRAL-------------------    1920px responvive 320px     -------------------*/
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* border: 1px solid black; */
-}
 
 h1, h2, h3, h4 {
     font-family: 'Dancing Script', cursive;
@@ -1422,8 +1410,4 @@ div.pedirAhora:active .shadow {
 div.pedirAhora:focus:not(:focus-visible) {
     outline: none;
 }
-
-
-
-
 

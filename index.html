@@ -9,26 +9,47 @@
         <link href="https://fonts.googleapis.com/css2?family=Acme&family=Actor&family=Dancing+Script&family=Source+Code+Pro&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/main.css">
         <title>Sweetvelvet</title>
     </head>
 
     <body>
-        <div>
-            <div id="boxHeaderNav">
-                <header>
-                    <div class="boxLogo">
-                        <a href="./index.html">
-                            <h1>Sweetvelvet</h1>
-                            <h2>by Paula</h2>
-                        </a>
+        <div class="container-fluid p-0">
+            <header>
+                <div class="boxLogo">
+                    <a href="./index.html">
+                        <h1>Sweetvelvet</h1>
+                        <h2>by Paula</h2>
+                    </a>
+                </div>
+                <div class="animate__animated animate__zoomInUp pedirAhora">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front text"><a href="./pages/contacto.html">Pedir ahora</a></span>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li>
+                            <a href="./pages/historia.html">Historia</a>
+                        </li>
+                        <li>
+                            <a href="./pages/contacto.html">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="./pages/login.html">Login</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="menu">
+                    <div id="menu-bar" onclick="menuOnClick()">
+                        <div id="bar1" class="bar"></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
                     </div>
-                    <div class="animate__animated animate__zoomInUp pedirAhora">
-                        <span class="shadow"></span>
-                        <span class="edge"></span>
-                        <span class="front text"><a href="./pages/contacto.html">Pedir ahora</a></span>
-                    </div>
-                    <nav id="navIndex">
+                    <div class="nav" id="nav">
                         <ul>
                             <li>
                                 <a href="./pages/productos.html">Productos</a>
@@ -43,62 +64,38 @@
                                 <a href="./pages/login.html">Login</a>
                             </li>
                         </ul>
-                    </nav>
-                    <div id="menu">
-                        <div id="menu-bar" onclick="menuOnClick()">
-                            <div id="bar1" class="bar"></div>
-                            <div id="bar2" class="bar"></div>
-                            <div id="bar3" class="bar"></div>
-                        </div>
-                        <div class="nav" id="nav">
-                            <ul>
-                                <li>
-                                    <a href="./pages/productos.html">Productos</a>
-                                </li>
-                                <li>
-                                    <a href="./pages/historia.html">Historia</a>
-                                </li>
-                                <li>
-                                    <a href="./pages/contacto.html">Contacto</a>
-                                </li>
-                                <li>
-                                    <a href="./pages/login.html">Login</a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
-                    <div class="menu-bg" id="menu-bg"></div>
-                </header>
-            </div>
+                </div>
+                <div class="menu-bg" id="menu-bg"></div>
+            </header>
             
             <!-- ------------------------------------------   Seccion FrontPage   ------------>
-
             <section class="container-fluid" id="sectionFrontPage">
                 <div class="row">
-                    <div class="col-12">
-                        <h2 class="animate__animated animate__fadeInRightBig ">&bull; Bienvenido &bull;</h2>
+                    <div class="col-12 pt-3 pb-3">
+                        <h2 class="animate__animated animate__fadeInRightBig ">&bull; Bienvenidos &bull;</h2>
                         <h3 class="animate__animated animate__fadeInDownBig animate__delay-1s">Pasteleria y Reposteria Artesanal</h3>
                         <h4 class="animate__animated animate__fadeInUpBig animate__delay-1s">Gerli - Avellaneda</h4>
                     </div>
                 </div>
-                <div class="row p-3">
-                    <div class="col-12 col-md-4 pt-3 pb-3">
-                        <div class="card">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="card mb-3">
                             <img src="./images/mostrador.png" class="card-img-top" alt="mostrador de tortas">
                         </div>
                     </div>
-                    <div class="col-12 col-md-8 pt-3 pb-3">
+                    <div class="col-12 col-md-8">
                         <div class="card">
                             <img src="./images/platoMadera.png" class="card-img-top" alt="porcion torta en plato de madera">
                         </div>
                     </div>
                 </div>
             </section>
-                <!-- --------------------------------------------  Seccion CRAFT  --------->
 
-            <section class="container-fluid" id="sectionCraft">
-                <div class="row p-3">
-                    <div class="col-12 col-md-6 pt-3">
+            <!-- --------------------------------------------  Seccion History  --------->
+            <section class="container-fluid" id="sectionHistory">
+                <div class="row">
+                    <div class="col-12 col-md-6">
                         <div class="card">
                             <img src="./images/ingredientes.png" alt="ingrdedientes manteca, harina, huevo, leche, etc">
                         </div>
@@ -107,30 +104,20 @@
                         <div>
                             <h3>Tortas Artesanales.</h3>
                             <h4>Hechas como en casa.</h4>
-                            <p>Con los mejores ingredientes y metodos tradicionales, 
+                            <p class="mt-3">Con los mejores ingredientes y metodos tradicionales, 
                             elaboramos nuestra deliciosa pasteleria y reposteria artesanal.</p>
-                            <div class="boxButtonCraft">
+                            <div class="btnHistory">
                                 <a href="./pages/historia.html">Queres conocer nuestra historia?</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            
 
-            <!-- <hr> ----------------------------------------  Seccion BEST SELLERS  ------------->
-
-            <section class="container-fluid" id="sectionBestSellers">
-                <h3>Best Sellers</h3><span>ARMAR GRILLA</span>
-                <p>Disfruta los mas elegidos de nuestras varierdades de lingotes y tortas</p>
-                <a href="./pages/productos.html">Ver todos los productos</a>
-            </section>
-
-            <!-- <hr> ----------------------------------------  Seccion DELIVERY  ------------->
-
+            <!-- <hr> ----------------------------------------------  Seccion DELIVERY  ------------->
             <section class="container-fluid" id="sectionDelivery">
                 <div class="row">
-                    <div class="col-12 col-md-7 boxTextDelivery">
+                    <div class="col-12 col-md-7 pt-3 boxTextDelivery">
                         <h3>Delivery</h3>
                         <span class="textMoved1">Llevamos todos nuestros productos</span>
                         <span class="textMoved2">Sweetvelvet by Paula</span>
@@ -139,47 +126,50 @@
                         <span class="textMoved5">alcanzamos.</span>
                         <span class="textMoved6">Hacemos envios de Lunes a Viernes</span>
                         <span class="textMoved7">de 8am a 8pm.</span>
-                        <div class="buttonDelivery pedirAhora">
-                            <span class="shadow"></span>
-                            <span class="edge"></span>
-                            <span class="front text"><a href="./pages/contacto.html">Pedir ahora</a></span>
+                        <div class="btnDelivery pedirAhora">
+                            <div class="shadow"></div>
+                            <div class="edge"></div>
+                            <div class="front text"><a href="./pages/contacto.html">Pedir ahora</a></div>
                         </div>
                     </div>
                     <div class="col-12 col-md-5 boxImageDelivery">
-                        <div class="card ">
+                        <div class="card w-100">
                             <img src="./images/delivery.png" alt="delivery">
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- <hr> ----------------------------------------  Seccion CONTACT US  ------------->
-
+            <!-- <hr> ----------------------------------------  Seccion CONTACT-US  ------------->
             <section class="container-fluid" id="sectionContactUs">
                 <div class="row">
-                    <div class="col-12 col-md-2 boxTextContactUs">
+                    <div class="col-12 col-md-2 ps-0 pe-0 boxTextContactUs">
                         <h4>Detras de escena</h4>
-                        <button class="buttonContactUs">
+                        <div class="btnContactUs">
                             <a href="./pages/contacto.html">Contactanos</a>
-                        </button>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-4 pt-3 pb-3 boxImage1">
-                        <div class="card">
+                    <div class="col-12 col-md-4 mb-3 boxImage1">
+                        <div class="card w-100">
                             <img src="./images/bañoChoco.png" alt="baño chocolate">
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="row">
-                            <div class="col-12 card p-0 boxImage2">
-                                <img src="./images/pastelero.png" alt="pastelero decorando">
+                            <div class="col-12 boxImage2">
+                                <div class="card">
+                                    <img src="./images/pastelero.png" alt="pastelero decorando">
+                                </div>
                             </div>
                         </div>
                         <div class="row">
                             <hr class="pt-2 pb-2">
                         </div>
                         <div class="row">
-                            <div class="col-12 card p-0 boxImage3">
-                                <img src="./images/panadero1.png" alt="cafe y factura">
+                            <div class="col-12 boxImage3">
+                                <div class="card">
+                                    <img src="./images/panadero1.png" alt="cafe y factura">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -189,7 +179,7 @@
 
             <!-------------------------------------------      FOOTER     ---------------------------->
             <footer>
-                <div id="footerNavBar">
+                <div id="menuFooter">
                     <hr>
                     <ul>
                         <li>
@@ -211,15 +201,15 @@
                     <hr>
                 </div>
                 <div id="boxFooter">
-                    <div class="boxTextFooter1">
+                    <div class="boxTxFooter boxTxFooter1">
                         <p>1741-En aLguN luGar dEl mUNdO
                         Buenos Aires - Argentina
                         CP-999</p>
                     </div>
-                    <div class="boxTextFooter2">
+                    <div class="boxTxFooter boxTxFooter2">
                         <a href="./index.html"><h2>Sweetvelvet <br> by Paula</h2></a>
                     </div>
-                    <div class="boxTextFooter3">
+                    <div class="boxTxFooter boxTxFooter3">
                         <a href="https://wa.me/1168823508" target="_blank">+54 9 11 6882 3508</a>
                         <a href="mailto:amgiribaldi@gmail.com">amgiribaldi@gmail.com</a>
                     </div>

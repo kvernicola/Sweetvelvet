@@ -9,30 +9,51 @@
         <link href="https://fonts.googleapis.com/css2?family=Acme&family=Actor&family=Dancing+Script&family=Source+Code+Pro&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/main.css">
         <title>Productos</title>
     </head>
 
     <body>
-        <div>
-            <div id="boxHeaderNav">
-                <header>
-                    <div class="boxLogo">
-                        <a href="../index.html">
-                            <h2>Sweetvelvet</h2>
-                            <h2>by Paula</h2>
-                        </a>
+        <div class="container-fluid p-0">
+            <header>
+                <div class="boxLogo">
+                    <a href="../index.html">
+                        <h2>Sweetvelvet</h2>
+                        <h2>by Paula</h2>
+                    </a>
+                </div>
+                <div class="animate__animated animate__zoomInUp pedirAhora">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front text"><a href="../pages/contacto.html">Pedir ahora</a></span>
+                </div>
+                <nav>
+                    <ul>
+                        <!-- <li>
+                            <a href="../pages/productos.html">Productos</a>
+                        </li> -->
+                        <li>
+                            <a href="../pages/historia.html">Historia</a>
+                        </li>
+                        <li>
+                            <a href="../pages/contacto.html">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="../pages/login.html">Login</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="menu">
+                    <div id="menu-bar" onclick="menuOnClick()">
+                        <div id="bar1" class="bar"></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
                     </div>
-                    <div class="animate__animated animate__zoomInUp pedirAhora">
-                        <span class="shadow"></span>
-                        <span class="edge"></span>
-                        <span class="front text"><a href="../pages/contacto.html">Pedir ahora</a></span>
-                    </div>
-                    <nav>
+                    <div class="nav" id="nav">
                         <ul>
-                            <!-- <li>
-                                <a href="../pages/productos.html">Productos</a>
-                            </li> -->
+                            <li>
+                                <a href="../index.html">Inicio</a>
+                            </li>
                             <li>
                                 <a href="../pages/historia.html">Historia</a>
                             </li>
@@ -43,33 +64,10 @@
                                 <a href="../pages/login.html">Login</a>
                             </li>
                         </ul>
-                    </nav>
-                    <div id="menu">
-                        <div id="menu-bar" onclick="menuOnClick()">
-                            <div id="bar1" class="bar"></div>
-                            <div id="bar2" class="bar"></div>
-                            <div id="bar3" class="bar"></div>
-                        </div>
-                        <div class="nav" id="nav">
-                            <ul>
-                                <li>
-                                    <a href="../index.html">Inicio</a>
-                                </li>
-                                <li>
-                                    <a href="../pages/historia.html">Historia</a>
-                                </li>
-                                <li>
-                                    <a href="../pages/contacto.html">Contacto</a>
-                                </li>
-                                <li>
-                                    <a href="../pages/login.html">Login</a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
-                    <div class="menu-bg" id="menu-bg"></div>
-                </header>
-            </div>
+                </div>
+                <div class="menu-bg" id="menu-bg"></div>
+            </header>
             
             <main id="mainProducts">
                 <div class="container-fluid p-0"> <!------------------ Grid layout boostrap ---------------->
@@ -206,7 +204,7 @@
             </main>
             <!-------------------------------------------      FOOTER     ---------------------------->
             <footer>
-                <div id="footerNavBar">
+                <div id="menuFooter">
                     <hr>
                     <ul>
                         <li>
@@ -228,15 +226,15 @@
                     <hr>
                 </div>
                 <div id="boxFooter">
-                    <div class="boxTextFooter1">
+                    <div class="boxTxFooter boxTxFooter1">
                         <p>1741-En aLguN luGar dEl mUNdO
                         Buenos Aires - Argentina
                         CP-999</p>
                     </div>
-                    <div class="boxTextFooter2">
+                    <div class="boxTxFooter boxTxFooter2">
                         <a href="../index.html"><h2>Sweetvelvet <br> by Paula</h2></a>
                     </div>
-                    <div class="boxTextFooter3">
+                    <div class="boxTxFooter boxTxFooter3">
                         <a href="https://wa.me/1168823508" target="_blank">+54 9 11 6882 3508</a>
                         <a href="mailto:amgiribaldi@gmail.com">amgiribaldi@gmail.com</a>
                     </div>
