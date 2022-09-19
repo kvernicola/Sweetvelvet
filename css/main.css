@@ -517,7 +517,7 @@ footer {
         left: -1px;
         top: 5px;
         border-radius: 0px 0px 0px 5px; }
-    #mainContact #contact_form2 .checkbox {
+    #mainContact #contact_form2 .checkbox, #mainContact #contact_form2 .agree {
       width: max-content;
       margin: 1rem auto 0;
       display: flex;
@@ -529,18 +529,18 @@ footer {
       font-size: 20px;
       user-select: none;
       border-radius: 5px; }
-      #mainContact #contact_form2 .checkbox span {
+      #mainContact #contact_form2 .checkbox span, #mainContact #contact_form2 .agree span {
         width: 150px;
         font-size: 1rem;
         margin-left: 5px;
         padding-left: 1rem;
         letter-spacing: 2px; }
-        #mainContact #contact_form2 .checkbox span:hover {
+        #mainContact #contact_form2 .checkbox span:hover, #mainContact #contact_form2 .agree span:hover {
           border-radius: 1rem;
           border: 1px solid #fff;
           box-shadow: 4px 4px 10px #c5c5c5;
           transition: all 0.3s; }
-      #mainContact #contact_form2 .checkbox .checkAgree {
+      #mainContact #contact_form2 .checkbox .checkAgree, #mainContact #contact_form2 .agree .checkAgree {
         width: 200px;
         margin-right: 1rem;
         margin-left: 0;
@@ -549,31 +549,31 @@ footer {
         font-size: 0.8rem;
         border-radius: 1rem;
         border: 1px dashed #fff; }
-        #mainContact #contact_form2 .checkbox .checkAgree:hover {
+        #mainContact #contact_form2 .checkbox .checkAgree:hover, #mainContact #contact_form2 .agree .checkAgree:hover {
           border: none;
           border: 1px solid #fff;
           box-shadow: 4px 4px 10px #c5c5c5;
           transition: all 0.3s; }
-      #mainContact #contact_form2 .checkbox input {
+      #mainContact #contact_form2 .checkbox input, #mainContact #contact_form2 .agree input {
         position: absolute;
         opacity: 0;
         cursor: pointer;
         height: 0;
         width: 0;
         border-radius: 5px; }
-        #mainContact #contact_form2 .checkbox input:checked ~ .checkmark {
+        #mainContact #contact_form2 .checkbox input:checked ~ .checkmark, #mainContact #contact_form2 .agree input:checked ~ .checkmark {
           box-shadow: 3px 3px 0px #b7b7b7;
           transition: all 0.2s;
           opacity: 1;
           background-image: linear-gradient(180deg, white 0%, #175f7e 50%, white 100%); }
-        #mainContact #contact_form2 .checkbox input:checked ~ .checkmark:after {
+        #mainContact #contact_form2 .checkbox input:checked ~ .checkmark:after, #mainContact #contact_form2 .agree input:checked ~ .checkmark:after {
           opacity: 1;
           transition: all 0.2s; }
-      #mainContact #contact_form2 .checkbox input ~ .checkmark {
+      #mainContact #contact_form2 .checkbox input ~ .checkmark, #mainContact #contact_form2 .agree input ~ .checkmark {
         transition: all 0.2s;
         opacity: 1;
         box-shadow: 1px 1px 0px #b7b7b7; }
-      #mainContact #contact_form2 .checkbox .checkmark {
+      #mainContact #contact_form2 .checkbox .checkmark, #mainContact #contact_form2 .agree .checkmark {
         position: relative;
         top: 0;
         left: 0;
@@ -581,12 +581,12 @@ footer {
         width: 1.3em;
         background-color: #d1d4e5;
         border-radius: 5px; }
-        #mainContact #contact_form2 .checkbox .checkmark:after {
+        #mainContact #contact_form2 .checkbox .checkmark:after, #mainContact #contact_form2 .agree .checkmark:after {
           content: "";
           position: absolute;
           opacity: 0;
           transition: all 0.2s; }
-        #mainContact #contact_form2 .checkbox .checkmark:after {
+        #mainContact #contact_form2 .checkbox .checkmark:after, #mainContact #contact_form2 .agree .checkmark:after {
           left: 0.45em;
           top: 0.25em;
           width: 0.25em;
@@ -594,6 +594,10 @@ footer {
           border: solid white;
           border-width: 0 0.15em 0.15em 0;
           transform: rotate(45deg); }
+    #mainContact #contact_form2 .agree {
+      margin-top: 2rem; }
+      #mainContact #contact_form2 .agree .checkAgree:hover {
+        box-shadow: 4px 4px 10px black; }
   #mainContact .btnEnviar {
     margin: 1rem auto; }
 
@@ -661,7 +665,7 @@ footer {
       #bgLogin #mainLogin #login_form .passw {
         width: 65%;
         margin-bottom: 1rem; }
-      #bgLogin #mainLogin #login_form .checkbox {
+      #bgLogin #mainLogin #login_form .checkbox, #bgLogin #mainLogin #login_form #mainContact #contact_form2 .agree, #mainContact #contact_form2 #bgLogin #mainLogin #login_form .agree {
         color: #fff;
         width: 45%;
         margin-bottom: 3rem; }
@@ -687,7 +691,7 @@ footer {
         #bgLogin #mainLogin #login_form .passw {
           width: 100%;
           margin-bottom: 1rem; }
-        #bgLogin #mainLogin #login_form .checkbox {
+        #bgLogin #mainLogin #login_form .checkbox, #bgLogin #mainLogin #login_form #mainContact #contact_form2 .agree, #mainContact #contact_form2 #bgLogin #mainLogin #login_form .agree {
           width: 180px;
           text-align: center;
           margin: 0 auto; }
