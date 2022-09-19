@@ -1,3 +1,15 @@
+body .colorPrimary {
+  color: #ff0000; }
+
+body .colorSecondary {
+  color: #175F7E; }
+
+body .colorTertiary {
+  color: #D88F82; }
+
+body .colorQuaternary {
+  color: #fff; }
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +20,7 @@ a {
   a:hover {
     font-weight: bold; }
   a:visited {
-    color: #ffffff; }
+    color: #fff; }
 
 h1,
 h2,
@@ -16,7 +28,7 @@ h3,
 h4 {
   font-family: "Dancing Script", cursive;
   font-size: 40px;
-  color: #ffffff;
+  color: #fff;
   margin: 0;
   padding: 0; }
 
@@ -26,7 +38,7 @@ li,
 span,
 legend {
   font-family: "Acme", sans-serif;
-  color: #ffffff;
+  color: #fff;
   font-size: 1.7rem; }
 
 hr {
@@ -102,7 +114,7 @@ ul {
   font-family: inherit;
   width: 110px;
   background: #ff0000;
-  color: #ffffff;
+  color: #fff;
   padding: 0.4rem 1rem;
   padding-left: 0.9em;
   display: flex;
@@ -183,7 +195,7 @@ header {
     #menu #menu-bar .bar {
       height: 5px;
       width: 100%;
-      background-color: #ffffff;
+      background-color: #fff;
       display: block;
       border-radius: 5px;
       transition: 0.3s ease; }
@@ -223,7 +235,7 @@ header {
   display: block; }
 
 .change .bar {
-  background-color: #ffffff; }
+  background-color: #fff; }
 
 .change #bar1 {
   transform: translateY(4px) rotateZ(45deg); }
@@ -295,7 +307,7 @@ footer {
   footer a {
     font-size: 1.3rem; }
     footer a:hover {
-      color: #ffffff; }
+      color: #fff; }
   footer #menuFooter ul {
     display: flex;
     justify-content: space-between; }
@@ -344,14 +356,14 @@ footer {
 
 #mainProducts {
   padding: 3rem;
-  background-color: #ffffff; }
+  background-color: #fff; }
   #mainProducts h1 {
     text-align: center;
     margin-bottom: 4rem;
     margin-left: 0%;
     color: #D88F82; }
   #mainProducts .card {
-    background-color: #ffffff;
+    background-color: #fff;
     box-shadow: 3px -7px 10px 1px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 3px -7px 10px 1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 3px -7px 10px 1px rgba(0, 0, 0, 0.75);
@@ -385,12 +397,12 @@ footer {
       letter-spacing: 2px; }
       #mainContact #contact_form1 .frmGroup .frmInput {
         width: 100%;
-        border: solid 1px #ffffff;
+        border: solid 1px #fff;
         border-radius: 1rem;
         background: none;
         padding: 1rem;
         font-size: 1rem;
-        color: #ffffff;
+        color: #fff;
         transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
         letter-spacing: 2px; }
         #mainContact #contact_form1 .frmGroup .frmInput[type='name'], #mainContact #contact_form1 .frmGroup .frmInput[type='text'], #mainContact #contact_form1 .frmGroup .frmInput[type='tel'] {
@@ -405,9 +417,9 @@ footer {
           transform: translateY(-50%) scale(0.8);
           background-color: #175F7E;
           padding: 0 0.2rem;
-          color: #ffffff; }
+          color: #fff; }
         #mainContact #contact_form1 .frmGroup .frmInput:hover {
-          border: 1px solid #ffffff;
+          border: 1px solid #fff;
           box-shadow: 4px 4px 12px #c5c5c5;
           transition: all 0.3s; }
       #mainContact #contact_form1 .frmGroup textarea {
@@ -461,7 +473,7 @@ footer {
         z-index: 1;
         width: 8px;
         height: 8px;
-        background: #ffffff;
+        background: #fff;
         box-shadow: #0000003d 0px 0px 4px 0px;
         border-radius: 100%;
         left: 0px;
@@ -471,7 +483,7 @@ footer {
       #mainContact #contact_form2 .love input:checked + label .round {
         transform: translate(0px, 0px);
         animation: check-animation .5s forwards;
-        background-color: #ffffff; }
+        background-color: #fff; }
       #mainContact #contact_form2 .love .love-heart {
         box-sizing: border-box;
         position: relative;
@@ -525,7 +537,7 @@ footer {
         letter-spacing: 2px; }
         #mainContact #contact_form2 .checkbox span:hover {
           border-radius: 1rem;
-          border: 1px solid #ffffff;
+          border: 1px solid #fff;
           box-shadow: 4px 4px 10px #c5c5c5;
           transition: all 0.3s; }
       #mainContact #contact_form2 .checkbox .checkAgree {
@@ -536,10 +548,10 @@ footer {
         text-align: center;
         font-size: 0.8rem;
         border-radius: 1rem;
-        border: 1px dashed #ffffff; }
+        border: 1px dashed #fff; }
         #mainContact #contact_form2 .checkbox .checkAgree:hover {
           border: none;
-          border: 1px solid #ffffff;
+          border: 1px solid #fff;
           box-shadow: 4px 4px 10px #c5c5c5;
           transition: all 0.3s; }
       #mainContact #contact_form2 .checkbox input {
@@ -548,8 +560,7 @@ footer {
         cursor: pointer;
         height: 0;
         width: 0;
-        border-radius: 5px;
-        /* Show the checkmark when checked */ }
+        border-radius: 5px; }
         #mainContact #contact_form2 .checkbox input:checked ~ .checkmark {
           box-shadow: 3px 3px 0px #b7b7b7;
           transition: all 0.2s;
@@ -569,8 +580,7 @@ footer {
         height: 1.3em;
         width: 1.3em;
         background-color: #d1d4e5;
-        border-radius: 5px;
-        /* Style the checkmark/indicator */ }
+        border-radius: 5px; }
         #mainContact #contact_form2 .checkbox .checkmark:after {
           content: "";
           position: absolute;
@@ -615,7 +625,7 @@ footer {
       margin: 2rem 0;
       text-align: center; }
     #bgLogin #mainLogin #login_form {
-      border: 2px solid #ffffff;
+      border: 2px solid #fff;
       max-width: 768px;
       margin: 0px auto;
       padding: 1rem; }
@@ -627,18 +637,18 @@ footer {
         #bgLogin #mainLogin #login_form input[type='submit'] {
           background: none;
           font-size: 1rem;
-          border-color: #ffffff;
+          border-color: #fff;
           border-radius: 1rem;
           width: 100%;
-          color: #ffffff;
+          color: #fff;
           margin-top: 2rem; }
         #bgLogin #mainLogin #login_form input[type='email'], #bgLogin #mainLogin #login_form input[type='password'] {
-          border: solid 1px #ffffff;
+          border: solid 1px #fff;
           border-radius: 1rem;
           background: none;
           padding: 1rem;
           font-size: 1rem;
-          color: #ffffff;
+          color: #fff;
           transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
           letter-spacing: 1px;
           width: 100%; }
@@ -652,7 +662,7 @@ footer {
         width: 65%;
         margin-bottom: 1rem; }
       #bgLogin #mainLogin #login_form .checkbox {
-        color: #ffffff;
+        color: #fff;
         width: 45%;
         margin-bottom: 3rem; }
       #bgLogin #mainLogin #login_form .submit {
@@ -756,7 +766,7 @@ footer {
   #sectionContactUs .btnContactUs {
     width: fit-content;
     margin: 3rem auto;
-    background-color: #ffffff;
+    background-color: #fff;
     border-radius: 8px;
     box-shadow: 6px 6px 12px #c5c5c5; }
     #sectionContactUs .btnContactUs:hover {

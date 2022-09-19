@@ -1,20 +1,20 @@
 #mainProducts {
     padding: 3rem;
-    background-color: $quaternary-color;
+    background-color: map-get($colors, Quaternary);
     h1 {
         text-align: center;
         margin-bottom: 4rem;
         margin-left: 0%;
-        color: $terciary-color;
+        color: map-get($colors, Tertiary);
     }
     .card {
-        background-color: $quaternary-color;
+        background-color: map-get($colors, Quaternary);
         box-shadow: 3px -7px 10px 1px rgba(0,0,0,0.75);
         -webkit-box-shadow: 3px -7px 10px 1px rgba(0,0,0,0.75);
         -moz-box-shadow: 3px -7px 10px 1px rgba(0,0,0,0.75);
         margin: 1rem;
         h5 {
-            color: $terciary-color;
+            color: map-get($colors, Tertiary);
             font-family: $title-font;
             font-size: 25px;
             font-weight: bolder;
@@ -22,7 +22,7 @@
         }
         p {
             height: 150px;
-            color: $terciary-color;
+            color: map-get($colors, Tertiary);
             font-family: $primary-font;
             font-size: 1.2rem;
             

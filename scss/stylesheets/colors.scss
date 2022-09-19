@@ -1,4 +1,20 @@
-$primary-color: #ff0000;
-$secondary-color: #175F7E;
-$terciary-color: #D88F82;
-$quaternary-color: #ffffff;
+// $primary-color: #ff0000;
+// $secondary-color: #175F7E;
+// $tertiary-color: #D88F82;
+// $quaternary-color: #ffffff;
+
+$colors: (
+    Primary:#ff0000,
+    Secondary:#175F7E,
+    Tertiary:#D88F82,
+    Quaternary:#fff
+);
+
+
+body {
+    @each $class-name, $value-name in $colors {
+        .color#{$class-name}{
+            color:#{$value-name};
+        }
+    }
+}

@@ -13,7 +13,7 @@
 // ------------------------   INDEX.HTML   ------------------
 // ---------------------   Section FrontPage   --------------
 #sectionFrontPage {
-    background-color: $secondary-color;
+    background-color: map-get($colors, Secondary);
     padding: 2rem;
     overflow: hidden;
     h2 {
@@ -53,7 +53,7 @@
 
 #sectionHistory {
     padding: 0 2rem 0;
-    background-color: $terciary-color;
+    background-color: map-get($colors, Tertiary);
     h3 {
         font-size: 3rem;
         text-align: center;
@@ -79,12 +79,12 @@
     padding: 2rem;
     h3 {
         font-size: 3rem;
-        color: $terciary-color;
+        color: map-get($colors, Tertiary);
         text-align: center;
     }
     .boxTextDelivery {
         span {
-            color: $terciary-color;
+            color: map-get($colors, Tertiary);
             display: block;
             width: fit-content;
             margin: 1rem auto;
@@ -105,7 +105,7 @@
 // ---------------------   Section Contact-US  -----------------
 
 #sectionContactUs {
-    background-color: $secondary-color;
+    background-color: map-get($colors, Secondary);
     padding: 2rem;
     h4 {
         width: min-content;
@@ -115,7 +115,7 @@
     .btnContactUs {
         width: fit-content;
         margin: 3rem auto;
-        background-color: $quaternary-color;
+        background-color: map-get($colors, Quaternary);
         border-radius: 8px;
         box-shadow: 6px 6px 12px #c5c5c5;
         &:hover {
@@ -124,7 +124,7 @@
             transition: all 0.3s;
         }
         a {
-            color: $secondary-color;
+            color: map-get($colors, Secondary);
         }
     }
     .boxImage1 {

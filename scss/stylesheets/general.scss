@@ -12,7 +12,7 @@ a {
         font-weight: bold;
     }
     &:visited {
-        color: $quaternary-color;
+        color: map-get($colors, Quaternary);
     }
 }
 
@@ -23,7 +23,7 @@ h3,
 h4 {
     font-family: $title-font;
     font-size: 40px;
-    color: $quaternary-color;
+    color: map-get($colors, Quaternary);
     margin: 0;
     padding: 0;
 }
@@ -34,7 +34,7 @@ li,
 span,
 legend {
     font-family: $primary-font;
-    color: $quaternary-color;
+    color: map-get($colors, Quaternary);
     font-size: 1.7rem;
 }
 
@@ -121,7 +121,7 @@ ul {
         padding: 8px 2px;
         border-radius: 12px;
         // color: $secondary-color;
-        background: $primary-color;
+        background: map-get($colors, Primary);
         will-change: transform;
         transform: translateY(-4px);
         transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
@@ -135,8 +135,8 @@ ul {
 .btnEnviar {
     font-family: inherit;
     width: 110px;
-    background: $primary-color;
-    color: $quaternary-color;
+    background: map-get($colors, Primary);
+    color: map-get($colors, Quaternary);
     padding: 0.4rem 1rem;
     padding-left: 0.9em;
     display: flex;
@@ -185,3 +185,17 @@ ul {
 #sectionHistory .carousel-item img  {
     max-height: 70vh;
 }
+
+
+// ----  Pruebas ------
+
+// #pruebas {
+//     width: 100%;
+//     margin: 30px 40px;
+//     @each $color in #ff0000, #175F7E, #D88F82, #ffffff {
+//         #{$color}{
+//             color:#{$color};
+//         }
+//     }
+// }
+
