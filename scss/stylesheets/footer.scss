@@ -1,11 +1,14 @@
 footer {
     background-color: $primary-color;
-    padding: 1rem;
+    padding: 0 1rem;
     h2:hover {
         font-weight: bold;
     }
-    a:hover {
-        color: $quaternary-color;
+    a {
+        font-size: 1.3rem;
+        &:hover {
+            color: $quaternary-color;
+        }
     }
     #menuFooter {
         ul {
@@ -20,11 +23,12 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 2rem 1rem;
+        padding: 0 1rem;
         .boxTxFooter {
             width: 400px;
             p {
                 margin-bottom: 0;
+                font-size: 1.3rem;
             }
             h2 {
                 text-align: center;
@@ -57,6 +61,32 @@ footer {
             }
             .boxTxFooter3 {
                 text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    footer {
+        #menuFooter {
+            ul {
+                li {
+                    padding: 4px 8px 0 8px;
+                    a {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+        #boxFooter {
+            h2 {
+                font-size: 35px;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+            a {
+                font-size: 1.2rem;
             }
         }
     }

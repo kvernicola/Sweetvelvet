@@ -1,0 +1,293 @@
+#mainContact {
+    background-color: $secondary-color;
+    padding: 1rem 2rem 1rem 3rem;
+    h1 {
+        margin: 2rem 0;
+        text-align: center;
+    }
+    #contact_form1 {
+        max-width: 768px;
+        legend {
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 1.6rem;
+        }
+        .frmGroup {
+            position: relative;
+            letter-spacing: 2px;
+            .frmInput {
+                width: 100%;
+                border: solid 1px $quaternary-color;
+                border-radius: 1rem;
+                background: none;
+                padding: 1rem;
+                font-size: 1rem;
+                color: $quaternary-color;
+                transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+                letter-spacing: 2px;
+                &[type='name'],
+                &[type='text'],
+                &[type='tel'] {
+                    letter-spacing: 1px;
+                }
+                &:focus {
+                    outline: none;
+                    border: 1px solid $primary-color;
+                }
+                &:valid {
+                    outline: none;
+                    border: 1px solid $primary-color;
+                }
+                &:focus ~ label, &:valid ~ label {
+                    transform: translateY(-50%) scale(0.8);
+                    background-color: $secondary-color;
+                    padding: 0 0.2rem;
+                    color: $quaternary-color;
+                }
+                &:hover {
+                    border: 1px solid $quaternary-color;
+                    box-shadow: 4px 4px 12px #c5c5c5;
+                    transition: all 0.3s;
+                }
+            }
+            textarea {
+                overflow: auto;
+                line-height: 150%;
+                height: 150px;
+                resize: none;
+            }
+            .frmLabel {
+                position: absolute;
+                left: 15px;
+                color: #cebaae;
+                pointer-events: none;
+                transform: translateY(1rem);
+                transition: 150ms cubic-bezier(0.4,0,0.2,1);
+            }
+        }
+    }
+    #contact_form2 {
+        padding-bottom: 1rem;
+        margin-top: 3rem;
+        max-width: 768px;
+        legend {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+        span {
+            font-size: 1.3rem;
+        }
+        .spanIntereses {
+            text-align: center;
+        }
+        .love-YesNo {
+            display: flex;
+            justify-content: space-around;
+            .love-No {
+                margin-left: 15%;
+            }
+            .love-Yes {
+                margin-right: 25%;
+            }
+        }
+        .love {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            margin: 0 auto;
+            .love-heart:before,#switch {
+                display: none;
+            }
+            .love-heart,
+            .love-heart::after {
+                border-color: #c5c5c5;
+                border: 1px solid;
+                border-top-left-radius: 100px;
+                border-top-right-radius: 100px;
+                width: 10px;
+                height: 8px;
+                border-bottom: 0
+            }
+            .round {
+                position: absolute;
+                z-index: 1;
+                width: 8px;
+                height: 8px;
+                background: $quaternary-color;
+                box-shadow: #0000003d 0px 0px 4px 0px;
+                border-radius: 100%;
+                left: 0px;
+                bottom: -1px;
+                transition: all .5s ease;
+                animation: check-animation2 .5s forwards;
+            }
+            input:checked + label .round {
+                transform: translate(0px, 0px);
+                animation: check-animation .5s forwards;
+                background-color: $quaternary-color;
+            }
+            .love-heart {
+                box-sizing: border-box;
+                position: relative;
+                transform: rotate(-45deg) translate(-50%, -33px) scale(4);
+                display: block;
+                border-color: #d1d4e5;
+                cursor: pointer;
+                top: 0;
+            }
+            input:checked + .love-heart,
+            input:checked + .love-heart::after,
+            input:checked + .love-heart .bottom {
+                border-color: $primary-color;
+                box-shadow: inset 6px -5px 0px 2px $primary-color;
+            }
+            .love-heart::after,
+            .love-heart .bottom {
+                content: "";
+                display: block;
+                box-sizing: border-box;
+                position: absolute;
+                border-color: #d1d4e5;
+            }
+            .love-heart::after {
+                right: -9px;
+                transform: rotate(90deg);
+                top: 7px;
+            }
+            .love-heart .bottom {
+                width: 11px;
+                height: 11px;
+                border-left: 1px solid;
+                border-bottom: 1px solid;
+                border-color: #d1d4e5;
+                left: -1px;
+                top: 5px;
+                border-radius: 0px 0px 0px 5px;
+            }
+        }
+        .checkbox {
+            width: max-content;
+            margin: 1rem auto 0;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+            font-size: 20px;
+            user-select: none;
+            border-radius: 5px;
+            span {
+                width: 150px;
+                font-size: 1rem;
+                margin-left: 5px;
+                padding-left: 1rem;
+                letter-spacing: 2px;
+                &:hover {
+                    border-radius: 1rem;
+                    border: 1px solid $quaternary-color;
+                    box-shadow: 4px 4px 10px #c5c5c5;
+                    transition: all 0.3s;
+                }
+            }
+            .checkAgree {
+                width: 200px;
+                margin-right: 1rem;
+                margin-left: 0;
+                padding: 0 0.5rem;
+                text-align: center;
+                font-size: 0.8rem;
+                border-radius: 1rem;
+                border: 1px dashed $quaternary-color;
+                &:hover {
+                    border: none;
+                    border: 1px solid $quaternary-color;
+                    box-shadow: 4px 4px 10px #c5c5c5;
+                    transition: all 0.3s;
+                }
+            }
+            input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+                border-radius: 5px;
+                &:checked ~ .checkmark {
+                    box-shadow: 3px 3px 0px rgb(183, 183, 183);
+                    transition: all 0.2s;
+                    opacity: 1;
+                    background-image: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(23,95,126,1) 50%, rgba(255,255,255,1) 100%);
+                }
+                /* Show the checkmark when checked */
+                &:checked ~ .checkmark:after {
+                    opacity: 1;
+                    transition: all 0.2s;
+                }
+            }
+            input ~ .checkmark {
+                transition: all 0.2s;
+                opacity: 1;
+                box-shadow: 1px 1px 0px rgb(183, 183, 183);
+            }
+            .checkmark {
+                position: relative;
+                top: 0;
+                left: 0;
+                height: 1.3em;
+                width: 1.3em;
+                background-color: #d1d4e5;
+                border-radius: 5px;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    opacity: 0;
+                    transition: all 0.2s;
+                }
+                /* Style the checkmark/indicator */
+                &:after {
+                    left: 0.45em;
+                    top: 0.25em;
+                    width: 0.25em;
+                    height: 0.5em;
+                    border: solid white;
+                    border-width: 0 0.15em 0.15em 0;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+    .btnEnviar {
+        margin: 1rem auto;
+    }
+}
+
+@keyframes check-animation {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(0px, 7px);
+    }
+    100% {
+        transform: translate(7px, 7px);
+    }
+}
+
+@keyframes check-animation2 {
+    0% {
+        transform: translate(7px, 7px);
+    }
+
+    50% {
+        transform: translate(0px, 7px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+
+// Faltaria armar una querie para sacar los padding y usar el 100vw

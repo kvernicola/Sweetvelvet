@@ -1,0 +1,105 @@
+#bgLogin {
+    background-image: url(../images/panadero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    #mainLogin {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        height: auto;
+        h1 {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        #login_form {
+            border: 2px solid $quaternary-color;
+            max-width: 768px;
+            margin: 0px auto;
+            padding: 1rem;
+            legend {
+                text-align: right;
+                margin-bottom: 1rem;
+            }
+            input {
+                line-height: normal;
+                &[type='submit'] {
+                    background: none;
+                    font-size: 1rem;
+                    border-color: $quaternary-color;
+                    border-radius: 1rem;
+                    width: 100%;
+                    color: $quaternary-color;
+                    margin-top: 2rem;
+                }
+                &[type='email'],
+                &[type='password'] {
+                    border: solid 1px $quaternary-color;
+                    border-radius: 1rem;
+                    background: none;
+                    padding: 1rem;
+                    font-size: 1rem;
+                    color: $quaternary-color;
+                    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+                    letter-spacing: 1px;
+                    width: 100%;
+                }
+                &:hover {
+                    box-shadow: 4px 4px 12px #c5c5c5;
+                    transition: all 0.3s;
+                }
+            }
+            .username {
+                width: 65%;
+                margin-bottom: 2rem;
+            }
+            .passw {
+                width: 65%;
+                margin-bottom: 1rem;
+            }
+            .checkbox {
+                color: $quaternary-color;
+                width: 45%;
+                margin-bottom: 3rem;
+            }
+            .submit {
+                width: 230px;
+            margin-left: auto;
+            margin-right: auto;
+            }
+        }
+    }
+}
+
+// ------------------------------ MediasQuerie --------------
+
+@media screen and (max-width: 768px) {
+    #bgLogin {
+        background-image: none;
+        background-color: rgb(0, 0, 0);
+        #mainLogin {
+            height: auto;
+            padding-top: 1rem;
+            #login_form {
+                width: 100%;
+                legend {
+                    text-align: center;
+                }
+                .username {
+                    width: 100%;
+                    margin-bottom: 2rem;
+                }
+                .passw {
+                    width: 100%;
+                    margin-bottom: 1rem;
+                }
+                .checkbox {
+                    width: 180px;
+                    text-align: center;
+                    margin: 0 auto;
+                }
+                .submit {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

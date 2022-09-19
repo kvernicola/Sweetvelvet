@@ -25,7 +25,7 @@
                 <div class="animate__animated animate__zoomInUp pedirAhora">
                     <span class="shadow"></span>
                     <span class="edge"></span>
-                    <span class="front text"><a href="../index.html">I n i c i o</a></span>
+                    <span class="front text"><a href="../pages/contacto.html">Pedir ahora</a></span>
                 </div>
                 <nav>
                     <ul>
@@ -35,9 +35,9 @@
                         <li>
                             <a href="../pages/historia.html">Historia</a>
                         </li>
-                        <!-- <li>
+                        <li>
                             <a href="../pages/contacto.html">Contacto</a>
-                        </li> -->
+                        </li>
                         <li>
                             <a href="../pages/login.html">Login</a>
                         </li>
@@ -70,89 +70,94 @@
             </header>
             
             <!----------------------------------------------    MAIN    ----------------------------->
-            <div class="container-fluid p-0">
+            <main class="container-fluid pb-3" id="mainContact">
                 <div class="row">
-                    <div class="col-12">
-                        <main id="mainContact">
-                            <h1>&bull; Contactanos &bull; </h1>
-                            <form action="#" method="post" enctype="multipart/form-data" id="contact_form">
-                                <legend>Datos de contacto</legend>
-                                <div class="name">
-                                    <label for="name">
-                                        <!-- <span style="transition-delay:0ms">U</span>
-                                        <span style="transition-delay:50ms">s</span>
-                                        <span style="transition-delay:100ms">e</span>
-                                        <span style="transition-delay:150ms">r</span>
-                                        <span style="transition-delay:200ms">n</span>
-                                        <span style="transition-delay:250ms">a</span>
-                                        <span style="transition-delay:300ms">m</span>
-                                        <span style="transition-delay:350ms">e</span> -->
-                                    </label>
-                                    <input type="text" name="name"  placeholder="Mi nombre es..." id="name_input">
-                                </div>
-                                <div class="email">
-                                    <label for="mail"></label>
-                                    <input required type="email" placeholder="Mi email es..." name="email" id="email_input" required>
-                                </div>
-                                <div class="telephone">
-                                    <label for="phonenumber"></label>
-                                    <input type="tel" placeholder="Mi numero es..." name="tel" id="telephone_input" required>
-                                </div>
-                                <div class="subject">
-                                    <label for="subject"></label>
-                                    <select name="subject" id="subject_input" required>
-                                        <option value="" selected disabled>Me gustaria...</option>
-                                        <option value="Bla">Bla</option>
-                                        <option value="Ble">Bla</option>
-                                        <option value="Bli">Bla</option>
-                                        <option value="Blo">Bla</option>
-                                    </select>
-                                </div>
-                                <div class="message">
-                                    <label for="message"></label>
-                                    <textarea name="message" placeholder="Dejanos tu mensaje" id="message_input" cols="30" rows="5"></textarea>
-                                </div>
-                                <div>
-                                    <span>Desea recibir nuestras novedades?</span>
-                                </div>
-                                <div>
-                                    <label for="si"><strong>Si</strong></label>
-                                    <input type="radio" name="Newsletter" id="si" value="si">
-                                    <label for="no"><strong>No</strong></label>
-                                    <input type="radio" name="Newsletter" id="no" value="no">
-                                </div>
-                                <div>
-                                    <span>Seleccione sus intereses</span>
-                                </div>
-                                <div class="checkbox">
-                                    <input type="checkbox" name="pasteleria" id="cakeshop">
-                                    <label for="cakeshop">Pasteleria</label>
-                                </div>
-                                <div class="checkbox">
-                                    <input type="checkbox" name="tortas" id="cakes">
-                                    <label for="cakes">Tortas</label>
-                                </div>
-                                <div class="checkbox">
-                                    <input type="checkbox" name="lingotes" id="ingots">
-                                    <label for="ingots">Lingotes</label>
-                                </div>
-                                <div class="checkbox">
-                                    <input type="checkbox" name="panificacion" id="baking">
-                                    <label for="baking">Panificacion</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label for="agree">Acepta los terminos y condiciones</label>
-                                    <input type="checkbox" name="agree" id="agree">
-                                </div>
-                                <div>
-                                    <input type="submit" value="Enviar">
-                                    <input type="reset" value="Borrar formulario">
-                                </div>
-                            </form>
-                        </main>
+                    <h1>&bull; Contactanos &bull; </h1>
+                    <div class="col-12 col-md-7">
+                        <form action="#" method="post" enctype="multipart/form-data" id="contact_form1">
+                            <legend>Datos de contacto</legend>
+                            <div class="frmGroup mt-3 mb-3">
+                                <input type="name" name="name" autocomplete="off" class="frmInput" id="name_input" required>
+                                <label class="frmLabel">Nombre</label>
+                            </div>
+                            <div class="frmGroup mt-3 mb-3">
+                                <input type="text" name="email" autocomplete="off" class="frmInput"  required>
+                                <label class="frmLabel">Email</label>
+                            </div>
+                            <div class="frmGroup mt-3 mb-3">
+                                <input type="tel" name="tel" autocomplete="off" class="frmInput" id="phone_input" required>
+                                <label class="frmLabel">Telefono</label>
+                            </div>
+                            <div class="frmGroup mt-3">
+                                <textarea name="message"  cols="30" rows="5" class="frmInput" id="message_input" required></textarea>
+                                <label class="frmLabel">Dejanos tu mensaje</label>
+                            </div>
+                        </form>
                     </div>
+                    <div class="col-12 col-md-5">
+                        <form action="#" method="post" enctype="multipart/form-data" id="contact_form2">
+                            <legend class="pe-5">Desea recibir nuestras novedades?</legend>
+                            <div class="love-YesNo">
+                                <div class="love-No">
+                                    <span>No</span>
+                                </div>
+                                <div class="love-Yes">
+                                    <span>Si</span>
+                                </div>
+                            </div>
+                            <div class="love">
+                                <input id="switch" type="checkbox">
+                                <label class="love-heart" for="switch">
+                                    <i class="left"></i>
+                                    <i class="right"></i>
+                                    <i class="bottom"></i>
+                                    <div class="round"></div>
+                                </label>
+                            </div>
+                            <div class="spanIntereses pe-5">
+                                <span>Seleccione sus intereses</span>
+                            </div>
+                            <label class="checkbox">
+                                <span>Lingotes</span>
+                                <input type="checkbox" name="lingotes">
+                                <div class="checkmark"></div>
+                            </label>
+                            <label class="checkbox">
+                                <span>Panificacion</span>
+                                <input type="checkbox" name="panificacion">
+                                <div class="checkmark"></div>
+                            </label>
+                            <label class="checkbox">
+                                <span>Pasteleria</span>
+                                <input type="checkbox" name="pasteleria">
+                                <div class="checkmark"></div>
+                            </label>
+                            <label class="checkbox">
+                                <span>Tortas</span>
+                                <input type="checkbox" name="tortas">
+                                <div class="checkmark"></div>
+                            </label>
+                            <label class="checkbox agree">
+                                <input type="checkbox" name="agree" required>
+                                <div class="checkmark"></div>
+                                <span class="checkAgree">Acepta los terminos y condiciones</span>
+                            </label>
+                        </form>
+                    </div>
+                    <button class="btnEnviar">
+                        <div class="svg-wrapper-1">
+                            <div class="svg-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <span>Enviar</span>
+                        <!-- COMO HACER PARA QUE ESTE BOTON HAGA EL INPUT SUBMIT -->
+                    </button>
                 </div>
-            </div>
+            </main>
             <!-------------------------------------------      FOOTER     ---------------------------->
             <footer>
                 <div id="menuFooter">
@@ -202,3 +207,4 @@
         </script>
     </body>
 </html>
+

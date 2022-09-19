@@ -1,6 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    font-weight: bold; }
+  a:visited {
+    color: #ffffff; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0; }
+
+p,
+a,
+li,
+span,
+legend {
+  font-family: "Acme", sans-serif;
+  color: #ffffff;
+  font-size: 1.7rem; }
+
+hr {
+  width: 92%;
+  margin: 0 auto; }
+
+img,
+.card {
+  border-radius: 10px;
+  border: 0px; }
+
+ul {
+  list-style-type: none;
+  padding: 0; }
+
+.pedirAhora {
+  width: max-content;
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  touch-action: manipulation; }
+  .pedirAhora:hover {
+    filter: brightness(110%); }
+    .pedirAhora:hover .front {
+      transform: translateY(-6px);
+      transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5); }
+    .pedirAhora:hover .shadow {
+      transform: translateY(4px);
+      transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5); }
+  .pedirAhora:active .front {
+    transform: translateY(-2px);
+    transition: transform 34ms; }
+  .pedirAhora:active .shadow {
+    transform: translateY(1px);
+    transition: transform 34ms; }
+  .pedirAhora:focus:not(:focus-visible) {
+    outline: none; }
+  .pedirAhora .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: hsl(0deg 0% 0% / 0.25);
+    will-change: transform;
+    transform: translateY(2px);
+    transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1); }
+  .pedirAhora .edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: linear-gradient(to left, hsl(340deg 100% 16%) 0%, hsl(340deg 100% 32%) 8%, hsl(340deg 100% 32%) 92%, hsl(340deg 100% 16%) 100%); }
+  .pedirAhora .front {
+    display: block;
+    position: relative;
+    padding: 8px 2px;
+    border-radius: 12px;
+    background: #ff0000;
+    will-change: transform;
+    transform: translateY(-4px);
+    transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1); }
+
+.btnEnviar {
+  font-family: inherit;
+  width: 110px;
+  background: #ff0000;
+  color: #ffffff;
+  padding: 0.4rem 1rem;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 0.2s; }
+  .btnEnviar span {
+    display: block;
+    margin-left: 0.3rem;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.3rem; }
+  .btnEnviar svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out; }
+  .btnEnviar:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate; }
+  .btnEnviar:hover svg {
+    transform: translateX(1.5em) rotate(45deg) scale(1.1); }
+  .btnEnviar:hover span {
+    transform: translateX(5em); }
+  .btnEnviar:active {
+    transform: scale(0.95); }
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em); }
+  to {
+    transform: translateY(-0.1em); } }
+
+#sectionHistory .carousel-item img {
+  max-height: 70vh; }
+
 header {
   width: 100%;
-  height: 150px;
+  height: 120px;
   background-color: #ff0000;
   padding: 0;
   position: sticky;
@@ -11,7 +151,7 @@ header {
   justify-content: space-between; }
   header .boxLogo {
     width: 200px;
-    height: 150px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -149,11 +289,13 @@ header {
 
 footer {
   background-color: #ff0000;
-  padding: 1rem; }
+  padding: 0 1rem; }
   footer h2:hover {
     font-weight: bold; }
-  footer a:hover {
-    color: #ffffff; }
+  footer a {
+    font-size: 1.3rem; }
+    footer a:hover {
+      color: #ffffff; }
   footer #menuFooter ul {
     display: flex;
     justify-content: space-between; }
@@ -163,11 +305,12 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 1rem; }
+    padding: 0 1rem; }
     footer #boxFooter .boxTxFooter {
       width: 400px; }
       footer #boxFooter .boxTxFooter p {
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        font-size: 1.3rem; }
       footer #boxFooter .boxTxFooter h2 {
         text-align: center; }
     footer #boxFooter .boxTxFooter3 {
@@ -187,106 +330,347 @@ footer {
     footer #boxFooter .boxTxFooter3 {
       text-align: center; } }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+@media screen and (max-width: 500px) {
+  footer #menuFooter ul li {
+    padding: 4px 8px 0 8px; }
+    footer #menuFooter ul li a {
+      font-size: 1.2rem; }
+  footer #boxFooter h2 {
+    font-size: 35px; }
+  footer #boxFooter p {
+    font-size: 1.2rem; }
+  footer #boxFooter a {
+    font-size: 1.2rem; } }
 
-a {
-  text-decoration: none; }
-  a:hover {
-    font-weight: bold; }
-  a:visited {
-    color: #ffffff; }
+#mainProducts {
+  padding: 3rem;
+  background-color: #D88F82; }
+  #mainProducts h1 {
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-left: 0%; }
+  #mainProducts .card {
+    background-color: #D88F82;
+    box-shadow: 3px -7px 10px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 3px -7px 10px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px -7px 10px 1px rgba(0, 0, 0, 0.75); }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Dancing Script", cursive;
-  font-size: 40px;
-  color: #ffffff;
-  margin: 0;
-  padding: 0; }
+#mainContact {
+  background-color: #175F7E;
+  padding: 1rem 2rem 1rem 3rem; }
+  #mainContact h1 {
+    margin: 2rem 0;
+    text-align: center; }
+  #mainContact #contact_form1 {
+    max-width: 768px; }
+    #mainContact #contact_form1 legend {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 1.6rem; }
+    #mainContact #contact_form1 .frmGroup {
+      position: relative;
+      letter-spacing: 2px; }
+      #mainContact #contact_form1 .frmGroup .frmInput {
+        width: 100%;
+        border: solid 1px #ffffff;
+        border-radius: 1rem;
+        background: none;
+        padding: 1rem;
+        font-size: 1rem;
+        color: #ffffff;
+        transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+        letter-spacing: 2px; }
+        #mainContact #contact_form1 .frmGroup .frmInput[type='name'], #mainContact #contact_form1 .frmGroup .frmInput[type='text'], #mainContact #contact_form1 .frmGroup .frmInput[type='tel'] {
+          letter-spacing: 1px; }
+        #mainContact #contact_form1 .frmGroup .frmInput:focus {
+          outline: none;
+          border: 1px solid #ff0000; }
+        #mainContact #contact_form1 .frmGroup .frmInput:valid {
+          outline: none;
+          border: 1px solid #ff0000; }
+        #mainContact #contact_form1 .frmGroup .frmInput:focus ~ label, #mainContact #contact_form1 .frmGroup .frmInput:valid ~ label {
+          transform: translateY(-50%) scale(0.8);
+          background-color: #175F7E;
+          padding: 0 0.2rem;
+          color: #ffffff; }
+        #mainContact #contact_form1 .frmGroup .frmInput:hover {
+          border: 1px solid #ffffff;
+          box-shadow: 4px 4px 12px #c5c5c5;
+          transition: all 0.3s; }
+      #mainContact #contact_form1 .frmGroup textarea {
+        overflow: auto;
+        line-height: 150%;
+        height: 150px;
+        resize: none; }
+      #mainContact #contact_form1 .frmGroup .frmLabel {
+        position: absolute;
+        left: 15px;
+        color: #cebaae;
+        pointer-events: none;
+        transform: translateY(1rem);
+        transition: 150ms cubic-bezier(0.4, 0, 0.2, 1); }
+  #mainContact #contact_form2 {
+    padding-bottom: 1rem;
+    margin-top: 3rem;
+    max-width: 768px; }
+    #mainContact #contact_form2 legend {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 1.3rem; }
+    #mainContact #contact_form2 span {
+      font-size: 1.3rem; }
+    #mainContact #contact_form2 .spanIntereses {
+      text-align: center; }
+    #mainContact #contact_form2 .love-YesNo {
+      display: flex;
+      justify-content: space-around; }
+      #mainContact #contact_form2 .love-YesNo .love-No {
+        margin-left: 15%; }
+      #mainContact #contact_form2 .love-YesNo .love-Yes {
+        margin-right: 25%; }
+    #mainContact #contact_form2 .love {
+      width: 50px;
+      height: 50px;
+      position: relative;
+      margin: 0 auto; }
+      #mainContact #contact_form2 .love .love-heart:before, #mainContact #contact_form2 .love #switch {
+        display: none; }
+      #mainContact #contact_form2 .love .love-heart,
+      #mainContact #contact_form2 .love .love-heart::after {
+        border-color: #c5c5c5;
+        border: 1px solid;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        width: 10px;
+        height: 8px;
+        border-bottom: 0; }
+      #mainContact #contact_form2 .love .round {
+        position: absolute;
+        z-index: 1;
+        width: 8px;
+        height: 8px;
+        background: #ffffff;
+        box-shadow: #0000003d 0px 0px 4px 0px;
+        border-radius: 100%;
+        left: 0px;
+        bottom: -1px;
+        transition: all .5s ease;
+        animation: check-animation2 .5s forwards; }
+      #mainContact #contact_form2 .love input:checked + label .round {
+        transform: translate(0px, 0px);
+        animation: check-animation .5s forwards;
+        background-color: #ffffff; }
+      #mainContact #contact_form2 .love .love-heart {
+        box-sizing: border-box;
+        position: relative;
+        transform: rotate(-45deg) translate(-50%, -33px) scale(4);
+        display: block;
+        border-color: #d1d4e5;
+        cursor: pointer;
+        top: 0; }
+      #mainContact #contact_form2 .love input:checked + .love-heart,
+      #mainContact #contact_form2 .love input:checked + .love-heart::after,
+      #mainContact #contact_form2 .love input:checked + .love-heart .bottom {
+        border-color: #ff0000;
+        box-shadow: inset 6px -5px 0px 2px #ff0000; }
+      #mainContact #contact_form2 .love .love-heart::after,
+      #mainContact #contact_form2 .love .love-heart .bottom {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        border-color: #d1d4e5; }
+      #mainContact #contact_form2 .love .love-heart::after {
+        right: -9px;
+        transform: rotate(90deg);
+        top: 7px; }
+      #mainContact #contact_form2 .love .love-heart .bottom {
+        width: 11px;
+        height: 11px;
+        border-left: 1px solid;
+        border-bottom: 1px solid;
+        border-color: #d1d4e5;
+        left: -1px;
+        top: 5px;
+        border-radius: 0px 0px 0px 5px; }
+    #mainContact #contact_form2 .checkbox {
+      width: max-content;
+      margin: 1rem auto 0;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+      cursor: pointer;
+      font-size: 20px;
+      user-select: none;
+      border-radius: 5px; }
+      #mainContact #contact_form2 .checkbox span {
+        width: 150px;
+        font-size: 1rem;
+        margin-left: 5px;
+        padding-left: 1rem;
+        letter-spacing: 2px; }
+        #mainContact #contact_form2 .checkbox span:hover {
+          border-radius: 1rem;
+          border: 1px solid #ffffff;
+          box-shadow: 4px 4px 10px #c5c5c5;
+          transition: all 0.3s; }
+      #mainContact #contact_form2 .checkbox .checkAgree {
+        width: 200px;
+        margin-right: 1rem;
+        margin-left: 0;
+        padding: 0 0.5rem;
+        text-align: center;
+        font-size: 0.8rem;
+        border-radius: 1rem;
+        border: 1px dashed #ffffff; }
+        #mainContact #contact_form2 .checkbox .checkAgree:hover {
+          border: none;
+          border: 1px solid #ffffff;
+          box-shadow: 4px 4px 10px #c5c5c5;
+          transition: all 0.3s; }
+      #mainContact #contact_form2 .checkbox input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+        border-radius: 5px;
+        /* Show the checkmark when checked */ }
+        #mainContact #contact_form2 .checkbox input:checked ~ .checkmark {
+          box-shadow: 3px 3px 0px #b7b7b7;
+          transition: all 0.2s;
+          opacity: 1;
+          background-image: linear-gradient(180deg, white 0%, #175f7e 50%, white 100%); }
+        #mainContact #contact_form2 .checkbox input:checked ~ .checkmark:after {
+          opacity: 1;
+          transition: all 0.2s; }
+      #mainContact #contact_form2 .checkbox input ~ .checkmark {
+        transition: all 0.2s;
+        opacity: 1;
+        box-shadow: 1px 1px 0px #b7b7b7; }
+      #mainContact #contact_form2 .checkbox .checkmark {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 1.3em;
+        width: 1.3em;
+        background-color: #d1d4e5;
+        border-radius: 5px;
+        /* Style the checkmark/indicator */ }
+        #mainContact #contact_form2 .checkbox .checkmark:after {
+          content: "";
+          position: absolute;
+          opacity: 0;
+          transition: all 0.2s; }
+        #mainContact #contact_form2 .checkbox .checkmark:after {
+          left: 0.45em;
+          top: 0.25em;
+          width: 0.25em;
+          height: 0.5em;
+          border: solid white;
+          border-width: 0 0.15em 0.15em 0;
+          transform: rotate(45deg); }
+  #mainContact .btnEnviar {
+    margin: 1rem auto; }
 
-p,
-a,
-li,
-span,
-legend {
-  font-family: "Acme", sans-serif;
-  color: #ffffff;
-  font-size: 1.7rem; }
+@keyframes check-animation {
+  0% {
+    transform: translate(0px, 0px); }
+  50% {
+    transform: translate(0px, 7px); }
+  100% {
+    transform: translate(7px, 7px); } }
 
-hr {
-  width: 92%;
-  margin: 0 auto; }
+@keyframes check-animation2 {
+  0% {
+    transform: translate(7px, 7px); }
+  50% {
+    transform: translate(0px, 7px); }
+  100% {
+    transform: translate(0px, 0px); } }
 
-img,
-.card {
-  border-radius: 10px;
-  border: 0px; }
+#bgLogin {
+  background-image: url(../images/panadero.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #bgLogin #mainLogin {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: auto; }
+    #bgLogin #mainLogin h1 {
+      margin: 2rem 0;
+      text-align: center; }
+    #bgLogin #mainLogin #login_form {
+      border: 2px solid #ffffff;
+      max-width: 768px;
+      margin: 0px auto;
+      padding: 1rem; }
+      #bgLogin #mainLogin #login_form legend {
+        text-align: right;
+        margin-bottom: 1rem; }
+      #bgLogin #mainLogin #login_form input {
+        line-height: normal; }
+        #bgLogin #mainLogin #login_form input[type='submit'] {
+          background: none;
+          font-size: 1rem;
+          border-color: #ffffff;
+          border-radius: 1rem;
+          width: 100%;
+          color: #ffffff;
+          margin-top: 2rem; }
+        #bgLogin #mainLogin #login_form input[type='email'], #bgLogin #mainLogin #login_form input[type='password'] {
+          border: solid 1px #ffffff;
+          border-radius: 1rem;
+          background: none;
+          padding: 1rem;
+          font-size: 1rem;
+          color: #ffffff;
+          transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+          letter-spacing: 1px;
+          width: 100%; }
+        #bgLogin #mainLogin #login_form input:hover {
+          box-shadow: 4px 4px 12px #c5c5c5;
+          transition: all 0.3s; }
+      #bgLogin #mainLogin #login_form .username {
+        width: 65%;
+        margin-bottom: 2rem; }
+      #bgLogin #mainLogin #login_form .passw {
+        width: 65%;
+        margin-bottom: 1rem; }
+      #bgLogin #mainLogin #login_form .checkbox {
+        color: #ffffff;
+        width: 45%;
+        margin-bottom: 3rem; }
+      #bgLogin #mainLogin #login_form .submit {
+        width: 230px;
+        margin-left: auto;
+        margin-right: auto; }
 
-ul {
-  list-style-type: none;
-  padding: 0; }
-
-.pedirAhora {
-  width: max-content;
-  position: relative;
-  border: none;
-  background: transparent;
-  padding: 0;
-  cursor: pointer;
-  outline-offset: 4px;
-  transition: filter 250ms;
-  user-select: none;
-  touch-action: manipulation; }
-  .pedirAhora:hover {
-    filter: brightness(110%); }
-    .pedirAhora:hover .front {
-      transform: translateY(-6px);
-      transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5); }
-    .pedirAhora:hover .shadow {
-      transform: translateY(4px);
-      transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5); }
-  .pedirAhora:active .front {
-    transform: translateY(-2px);
-    transition: transform 34ms; }
-  .pedirAhora:active .shadow {
-    transform: translateY(1px);
-    transition: transform 34ms; }
-  .pedirAhora:focus:not(:focus-visible) {
-    outline: none; }
-  .pedirAhora .shadow {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-    background: hsl(0deg 0% 0% / 0.25);
-    will-change: transform;
-    transform: translateY(2px);
-    transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1); }
-  .pedirAhora .edge {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-    background: linear-gradient(to left, hsl(340deg 100% 16%) 0%, hsl(340deg 100% 32%) 8%, hsl(340deg 100% 32%) 92%, hsl(340deg 100% 16%) 100%); }
-  .pedirAhora .front {
-    display: block;
-    position: relative;
-    padding: 8px 2px;
-    border-radius: 12px;
-    color: #ffffff;
-    background: #ff0000;
-    will-change: transform;
-    transform: translateY(-4px);
-    transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1); }
+@media screen and (max-width: 768px) {
+  #bgLogin {
+    background-image: none;
+    background-color: black; }
+    #bgLogin #mainLogin {
+      height: auto;
+      padding-top: 1rem; }
+      #bgLogin #mainLogin #login_form {
+        width: 100%; }
+        #bgLogin #mainLogin #login_form legend {
+          text-align: center; }
+        #bgLogin #mainLogin #login_form .username {
+          width: 100%;
+          margin-bottom: 2rem; }
+        #bgLogin #mainLogin #login_form .passw {
+          width: 100%;
+          margin-bottom: 1rem; }
+        #bgLogin #mainLogin #login_form .checkbox {
+          width: 180px;
+          text-align: center;
+          margin: 0 auto; }
+        #bgLogin #mainLogin #login_form .submit {
+          text-align: center; } }
 
 #sectionFrontPage {
   background-color: #175F7E;
