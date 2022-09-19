@@ -344,16 +344,29 @@ footer {
 
 #mainProducts {
   padding: 3rem;
-  background-color: #D88F82; }
+  background-color: #ffffff; }
   #mainProducts h1 {
     text-align: center;
     margin-bottom: 4rem;
-    margin-left: 0%; }
+    margin-left: 0%;
+    color: #D88F82; }
   #mainProducts .card {
-    background-color: #D88F82;
+    background-color: #ffffff;
     box-shadow: 3px -7px 10px 1px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 3px -7px 10px 1px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 3px -7px 10px 1px rgba(0, 0, 0, 0.75); }
+    -moz-box-shadow: 3px -7px 10px 1px rgba(0, 0, 0, 0.75);
+    margin: 1rem; }
+    #mainProducts .card h5 {
+      color: #D88F82;
+      font-family: "Dancing Script", cursive;
+      font-size: 25px;
+      font-weight: bolder;
+      text-align: center; }
+    #mainProducts .card p {
+      height: 150px;
+      color: #D88F82;
+      font-family: "Acme", sans-serif;
+      font-size: 1.2rem; }
 
 #mainContact {
   background-color: #175F7E;
@@ -422,12 +435,11 @@ footer {
     #mainContact #contact_form2 .spanIntereses {
       text-align: center; }
     #mainContact #contact_form2 .love-YesNo {
+      margin: auto;
+      padding-right: 3.5rem;
+      width: 200px;
       display: flex;
-      justify-content: space-around; }
-      #mainContact #contact_form2 .love-YesNo .love-No {
-        margin-left: 15%; }
-      #mainContact #contact_form2 .love-YesNo .love-Yes {
-        margin-right: 25%; }
+      justify-content: space-between; }
     #mainContact #contact_form2 .love {
       width: 50px;
       height: 50px;

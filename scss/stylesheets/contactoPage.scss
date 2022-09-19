@@ -82,13 +82,16 @@
             text-align: center;
         }
         .love-YesNo {
+            margin: auto;
+            padding-right: 3.5rem;
+            width: 200px;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             .love-No {
-                margin-left: 15%;
+                //margin-left: 15%;
             }
             .love-Yes {
-                margin-right: 25%;
+                //margin-right: 25%;
             }
         }
         .love {

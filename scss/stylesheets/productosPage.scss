@@ -1,15 +1,31 @@
 #mainProducts {
     padding: 3rem;
-    background-color: #D88F82;
+    background-color: $quaternary-color;
     h1 {
         text-align: center;
         margin-bottom: 4rem;
         margin-left: 0%;
+        color: $terciary-color;
     }
     .card {
-        background-color: #D88F82;
+        background-color: $quaternary-color;
         box-shadow: 3px -7px 10px 1px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 3px -7px 10px 1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 3px -7px 10px 1px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 3px -7px 10px 1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 3px -7px 10px 1px rgba(0,0,0,0.75);
+        margin: 1rem;
+        h5 {
+            color: $terciary-color;
+            font-family: $title-font;
+            font-size: 25px;
+            font-weight: bolder;
+            text-align: center;
+        }
+        p {
+            height: 150px;
+            color: $terciary-color;
+            font-family: $primary-font;
+            font-size: 1.2rem;
+            
+        }
     }
 }
