@@ -1,5 +1,6 @@
 @import 'stylesheets/colors.scss';
 @import 'stylesheets/fonts.scss';
+@import 'stylesheets/mixins.scss';
 @import 'stylesheets/general.scss';
 @import 'stylesheets/header.scss';
 @import 'stylesheets/footer.scss';
@@ -13,7 +14,8 @@
 // ------------------------   INDEX.HTML   ------------------
 // ---------------------   Section FrontPage   --------------
 #sectionFrontPage {
-    background-color: map-get($colors, Secondary);
+    @include bgColor (map-get($colors, Secondary), map-get($colors, Quaternary));
+    // background-color: map-get($colors, Secondary);
     padding: 2rem;
     overflow: hidden;
     h2 {
@@ -53,7 +55,7 @@
 
 #sectionHistory {
     padding: 0 2rem 0;
-    background-color: map-get($colors, Tertiary);
+    @include bgColor (map-get($colors, Tertiary), map-get($colors, Quaternary));
     h3 {
         font-size: 3rem;
         text-align: center;
@@ -96,9 +98,7 @@
         margin: 2rem auto ;
     }
     .boxImageDelivery {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexCenter
     }
 }
 
@@ -133,3 +133,4 @@
         justify-content: center;
     }
 }
+

@@ -9,12 +9,3 @@ $colors: (
     Tertiary:#D88F82,
     Quaternary:#fff
 );
-
-
-body {
-    @each $class-name, $value-name in $colors {
-        .color#{$class-name}{
-            color:#{$value-name};
-        }
-    }
-}

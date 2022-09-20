@@ -1,15 +1,3 @@
-body .colorPrimary {
-  color: #ff0000; }
-
-body .colorSecondary {
-  color: #175F7E; }
-
-body .colorTertiary {
-  color: #D88F82; }
-
-body .colorQuaternary {
-  color: #fff; }
-
 * {
   margin: 0;
   padding: 0;
@@ -702,6 +690,8 @@ footer {
   background-color: #175F7E;
   padding: 2rem;
   overflow: hidden; }
+  #sectionFrontPage h1, #sectionFrontPage h2, #sectionFrontPage h3, #sectionFrontPage h4, #sectionFrontPage span, #sectionFrontPage p {
+    color: #fff; }
   #sectionFrontPage h2 {
     font-size: 4rem;
     margin-left: 4rem; }
@@ -726,6 +716,8 @@ footer {
 #sectionHistory {
   padding: 0 2rem 0;
   background-color: #D88F82; }
+  #sectionHistory h1, #sectionHistory h2, #sectionHistory h3, #sectionHistory h4, #sectionHistory span, #sectionHistory p {
+    color: #fff; }
   #sectionHistory h3 {
     font-size: 3rem;
     text-align: center;
