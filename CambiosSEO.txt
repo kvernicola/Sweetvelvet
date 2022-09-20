@@ -1,0 +1,14 @@
+Para SEO hice estas modificaciones
+
+Agregue meta keywords en todas las paginas
+Personalice mas el elemento title de cada pagina
+Agregue meta description en todas las paginas
+Los heading creo haberlos colocado bien desde un principio, corregi que tenia un h1 metido donde no iba
+Los alt ya los describi en un principio, si queres te miento y te digo que lo agregue ahora jajaja
+Genere el sitemap.xml
+
+
+
+
+Deploy url:
+https://kvernicola.github.io/Sweetvelvet/index.html
