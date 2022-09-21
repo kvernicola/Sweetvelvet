@@ -6,7 +6,7 @@
         text-align: center;
     }
     #contact_form1 {
-        max-width: 768px;
+        width: 100%;
         legend {
             text-align: center;
             margin-bottom: 1rem;
@@ -263,7 +263,26 @@
         }
     }
     .btnEnviar {
-        margin: 1rem auto;
+        margin: 1rem auto 3rem;
+    }
+    #staticBackdrop {
+        .modal-content {
+            background-color: map-get($colors, Secondary);
+            .modal-header {
+                background-color: map-get($colors, Primary);
+                .modal-title {
+                    width: fit-content;
+                    margin: 1rem auto;
+                    font-family: $title-font;
+                    font-size: 35px;
+                    background-color: map-get($colors, Primary);
+                    color: map-get($colors, Quaternary);
+                }
+            }
+        }
+        span {
+            font-size: 1.4rem;
+        }
     }
 }
 

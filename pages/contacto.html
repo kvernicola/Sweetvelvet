@@ -146,7 +146,7 @@
                             </label>
                         </form>
                     </div>
-                    <button class="btnEnviar">
+                    <button class="btnEnviar" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><!-- Button trigger modal -->
                         <div class="svg-wrapper-1">
                             <div class="svg-wrapper">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
@@ -158,6 +158,24 @@
                         <span>Enviar</span>
                         <!-- COMO HACER PARA QUE ESTE BOTON HAGA EL INPUT SUBMIT -->
                     </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Mensaje enviado</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <span>En breve estaremos respondiendo su consulta</span>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </main>
             <!-------------------------------------------      FOOTER     ---------------------------->
