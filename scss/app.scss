@@ -19,17 +19,24 @@
     padding: 2rem;
     overflow: hidden;
     h2 {
-        font-size: 4rem;
+        font-size: 8rem;
         margin-left: 4rem;
     }
     h3 {
         font-size: 3rem;
-        margin: 2rem 0 0 10rem;
+        margin: 2rem 0 0 15rem;
     }
     h4 {
         margin: 2rem 0 1rem 0;
         text-align: center;
     }
+    .boxImg1 {
+        margin-top: 150px;
+    }
+}
+
+#svgOnda1 {
+    background-color: map-get($colors, Secondary);
 }
 
 // -------------------   MediaQuerie FrontPage --------------
@@ -37,16 +44,33 @@
 @media screen and (max-width: 767px) {
     #sectionFrontPage {
         h2 {
+            font-size: 70px;
             text-align: center;
             margin-left: 0;
         }
         h3 {
+            font-size: 45px;
             text-align: center;
             margin-left: 0;
         }
         h4 {
+            font-size: 35px;
             text-align: center;
             margin-left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #sectionFrontPage {
+        h2 {
+            font-size: 50px;
+        }
+        h3 {
+            font-size: 3rem;
+        }
+        h4 {
+            font-size: 2rem;
         }
     }
 }
@@ -63,18 +87,46 @@
     }
     h4 {
         text-align: center;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
     p {
         text-align: justify;
-        margin-bottom: 2rem;
+        margin: 3rem 1rem 1rem;
+        height: 220px;
     }
     .btnHistory {
         width: fit-content;
         margin: 1rem auto;
+        padding: 0.2rem;
+        background-color: map-get($colors, Quaternary);
+        border-radius: 8px;
+        box-shadow: 6px 6px 12px #c5c5c5;
+        &:hover {
+            border: 1px solid white;
+            box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+            transition: all 0.3s;
+        }
+        a {
+            color: map-get($colors, Tertiary);
+        }
     }
 }
 
+#svgOnda2 {
+    background-color: map-get($colors, Tertiary);
+}
+
+// -------------------   MediaQuerie History --------------
+@media screen and (max-width: 600px) {
+    #sectionHistory {
+        p {
+            font-size: 1.3rem;
+        }
+        a {
+            font-size: 1.3rem;
+        }
+    }
+}
 // ---------------------   Section Delivery  -----------------
 
 #sectionDelivery {
@@ -102,19 +154,34 @@
     }
 }
 
+// -------------------   MediaQuerie Delivery --------------
+@media screen and (max-width: 600px) {
+    #sectionDelivery {
+        h3 {
+            margin: 0 auto 3rem;
+        }
+        span {
+            font-size: 1.3rem;
+        }
+        .btnDelivery {
+            margin-top: 3rem;
+        }
+    }
+}
 // ---------------------   Section Contact-US  -----------------
 
 #sectionContactUs {
     background-color: map-get($colors, Secondary);
     padding: 2rem;
     h4 {
-        width: min-content;
+        width: fit-content;
         text-align: center;
         margin: 1rem auto 2rem;
     }
     .btnContactUs {
         width: fit-content;
         margin: 3rem auto;
+        padding: 0.2rem;
         background-color: map-get($colors, Quaternary);
         border-radius: 8px;
         box-shadow: 6px 6px 12px #c5c5c5;
@@ -134,3 +201,12 @@
     }
 }
 
+// -------------------   MediaQuerie ContactUs --------------
+@media screen and (max-width: 600px) {
+    #sectionContactUs {
+        h4 {
+            width: 100%;
+            margin: 0 auto 3rem;
+        }
+    }
+}

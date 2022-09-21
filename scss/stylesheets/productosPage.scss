@@ -2,30 +2,46 @@
     padding: 3rem;
     background-color: map-get($colors, Quaternary);
     h1 {
+        font-size: 3rem;
         text-align: center;
-        margin-bottom: 4rem;
         margin-left: 0%;
         color: map-get($colors, Tertiary);
     }
+    .nav-link {
+        color: map-get($colors, Tertiary);
+        &:hover {
+            font-weight: bold;
+        }
+    }
+    .active {
+        background-color: map-get($colors, Tertiary);
+        color: map-get($colors, Quaternary);
+    }
     .card {
         background-color: map-get($colors, Quaternary);
-        box-shadow: 3px -7px 10px 1px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 3px -7px 10px 1px rgba(0,0,0,0.75);
-        -moz-box-shadow: 3px -7px 10px 1px rgba(0,0,0,0.75);
+        box-shadow: 4px 4px 10px black;
         margin: 1rem;
-        h5 {
+        .card-title {
             color: map-get($colors, Tertiary);
             font-family: $title-font;
             font-size: 25px;
             font-weight: bolder;
             text-align: center;
         }
-        p {
+        .card-text {
             height: 150px;
             color: map-get($colors, Tertiary);
             font-family: $primary-font;
             font-size: 1.2rem;
             
+        }
+        .btn {
+            background-color: map-get($colors, Tertiary);
+            width: 100px;
+            transition: all 0.2s;
+            &:hover {
+                box-shadow: 4px 4px 10px black;
+            }
         }
     }
 }

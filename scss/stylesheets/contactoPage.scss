@@ -2,6 +2,7 @@
     background-color: map-get($colors, Secondary);
     padding: 1rem 2rem 1rem 3rem;
     h1 {
+        font-size: 3rem;
         margin: 2rem 0;
         text-align: center;
     }
@@ -263,7 +264,7 @@
         }
     }
     .btnEnviar {
-        margin: 1rem auto 3rem;
+        margin: 2rem auto 3rem;
     }
     #staticBackdrop {
         .modal-content {
@@ -275,7 +276,6 @@
                     margin: 1rem auto;
                     font-family: $title-font;
                     font-size: 35px;
-                    background-color: map-get($colors, Primary);
                     color: map-get($colors, Quaternary);
                 }
             }
