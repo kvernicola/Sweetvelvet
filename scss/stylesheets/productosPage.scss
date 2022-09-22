@@ -13,7 +13,7 @@
             font-weight: bold;
         }
     }
-    .active {
+    .nav-link.active {
         background-color: map-get($colors, Tertiary);
         color: map-get($colors, Quaternary);
     }

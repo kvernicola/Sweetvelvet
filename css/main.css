@@ -359,7 +359,7 @@ footer {
     color: #D88F82; }
     #mainProducts .nav-link:hover {
       font-weight: bold; }
-  #mainProducts .active {
+  #mainProducts .nav-link.active {
     background-color: #D88F82;
     color: #fff; }
   #mainProducts .card {
