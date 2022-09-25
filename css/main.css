@@ -4,6 +4,7 @@
   box-sizing: border-box; }
 
 a {
+  color: #fff;
   text-decoration: none; }
   a:hover {
     font-weight: bold; }
@@ -14,18 +15,21 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Dancing Script", cursive;
+  font-family: "Montserrat", sans-serif;
   font-size: 40px;
   color: #fff;
   margin: 0;
   padding: 0; }
 
+a {
+  font-family: "Acme", sans-serif;
+  font-size: 1.7rem; }
+
 p,
-a,
 li,
 span,
 legend {
-  font-family: "Acme", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #fff;
   font-size: 1.7rem; }
 
@@ -95,7 +99,7 @@ ul {
     position: relative;
     padding: 8px 2px;
     border-radius: 12px;
-    background: #ff0000;
+    background: #EC5766;
     will-change: transform;
     transform: translateY(-4px);
     transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1); }
@@ -103,7 +107,7 @@ ul {
 .btnEnviar {
   font-family: inherit;
   width: 110px;
-  background: #ff0000;
+  background: #EC5766;
   color: #fff;
   padding: 0.4rem 1rem;
   padding-left: 0.9em;
@@ -143,14 +147,14 @@ ul {
 header {
   width: 100%;
   height: 120px;
-  background-color: #ff0000;
+  background-color: #EC5766;
   padding: 0;
   position: sticky;
   top: 0px;
   z-index: 50;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 1rem; }
   header .boxLogo {
     width: 200px;
@@ -160,6 +164,9 @@ header {
     align-items: center; }
     header .boxLogo h1,
     header .boxLogo h2 {
+      font-family: "Dancing Script", cursive;
+      font-weight: 700;
+      color: #fff;
       width: 170px;
       text-align: center; }
       header .boxLogo h1:hover,
@@ -170,6 +177,10 @@ header {
     margin: 0; }
     header nav ul li {
       padding: 0 2rem; }
+      header nav ul li a {
+        color: #fff; }
+        header nav ul li a:visited {
+          color: #fff; }
 
 #menu {
   display: none;
@@ -182,7 +193,7 @@ header {
     height: 30px;
     margin: 30px 0px 20px 80px;
     cursor: pointer;
-    background-color: #ff0000; }
+    background-color: #EC5766; }
     #menu #menu-bar .bar {
       height: 5px;
       width: 100%;
@@ -218,7 +229,7 @@ header {
   width: 0;
   height: 0;
   margin: 40px 20px 20px 0px;
-  background: radial-gradient(circle, #ff0000, #ff0000);
+  background: radial-gradient(circle, #EC5766, #EC5766);
   border-radius: 50%;
   transition: 0.3s ease; }
 
@@ -293,8 +304,11 @@ header {
     margin-right: 22%; } }
 
 footer {
-  background-color: #ff0000;
+  background-color: #EC5766;
   padding: 0 1.5rem; }
+  footer h2 {
+    font-family: "Dancing Script", cursive;
+    font-weight: bold; }
   footer h2:hover {
     font-weight: bold; }
   footer a {
@@ -349,36 +363,44 @@ footer {
 
 #mainProducts {
   padding: 3rem;
-  background-color: #fff; }
+  background-color: #fff;
+  background-color: Primary; }
   #mainProducts h1 {
     font-size: 3rem;
     text-align: center;
     margin-left: 0%;
-    color: #D88F82; }
+    color: #EF7674; }
   #mainProducts .nav-link {
-    color: #D88F82; }
+    color: #EF7674; }
     #mainProducts .nav-link:hover {
       font-weight: bold; }
   #mainProducts .nav-link.active {
-    background-color: #D88F82;
+    background-color: #EF7674;
     color: #fff; }
   #mainProducts .card {
+    padding: 0.3rem;
     background-color: #fff;
     box-shadow: 4px 4px 10px black;
     margin: 1rem; }
+    #mainProducts .card .card-img-top {
+      width: 100%;
+      height: 330px;
+      object-fit: cover; }
     #mainProducts .card .card-title {
-      color: #D88F82;
-      font-family: "Dancing Script", cursive;
+      color: #EF7674;
+      font-family: "Montserrat", sans-serif;
       font-size: 25px;
       font-weight: bolder;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 2rem; }
     #mainProducts .card .card-text {
       height: 150px;
-      color: #D88F82;
-      font-family: "Acme", sans-serif;
-      font-size: 1.2rem; }
+      color: #EF7674;
+      font-family: "Poppins", sans-serif;
+      font-size: 1.2rem;
+      text-align: justify; }
     #mainProducts .card .btn {
-      background-color: #D88F82;
+      background-color: #EF7674;
       width: 100px;
       transition: all 0.2s; }
       #mainProducts .card .btn:hover {
@@ -414,10 +436,10 @@ footer {
           letter-spacing: 1px; }
         #mainContact #contact_form1 .frmGroup .frmInput:focus {
           outline: none;
-          border: 1px solid #ff0000; }
+          border: 1px solid #EC5766; }
         #mainContact #contact_form1 .frmGroup .frmInput:valid {
           outline: none;
-          border: 1px solid #ff0000; }
+          border: 1px solid #EC5766; }
         #mainContact #contact_form1 .frmGroup .frmInput:focus ~ label, #mainContact #contact_form1 .frmGroup .frmInput:valid ~ label {
           transform: translateY(-50%) scale(0.8);
           background-color: #175F7E;
@@ -500,8 +522,8 @@ footer {
       #mainContact #contact_form2 .love input:checked + .love-heart,
       #mainContact #contact_form2 .love input:checked + .love-heart::after,
       #mainContact #contact_form2 .love input:checked + .love-heart .bottom {
-        border-color: #ff0000;
-        box-shadow: inset 6px -5px 0px 2px #ff0000; }
+        border-color: #EC5766;
+        box-shadow: inset 6px -5px 0px 2px #EC5766; }
       #mainContact #contact_form2 .love .love-heart::after,
       #mainContact #contact_form2 .love .love-heart .bottom {
         content: "";
@@ -608,11 +630,11 @@ footer {
   #mainContact #staticBackdrop .modal-content {
     background-color: #175F7E; }
     #mainContact #staticBackdrop .modal-content .modal-header {
-      background-color: #ff0000; }
+      background-color: #EC5766; }
       #mainContact #staticBackdrop .modal-content .modal-header .modal-title {
         width: fit-content;
         margin: 1rem auto;
-        font-family: "Dancing Script", cursive;
+        font-family: "Montserrat", sans-serif;
         font-size: 35px;
         color: #fff; }
   #mainContact #staticBackdrop span {
@@ -723,16 +745,13 @@ footer {
   #sectionFrontPage h1, #sectionFrontPage h2, #sectionFrontPage h3, #sectionFrontPage h4, #sectionFrontPage span, #sectionFrontPage p {
     color: #fff; }
   #sectionFrontPage h2 {
-    font-size: 8rem;
-    margin-left: 4rem; }
-  #sectionFrontPage h3 {
-    font-size: 3rem;
-    margin: 2rem 0 0 15rem; }
-  #sectionFrontPage h4 {
-    margin: 2rem 0 1rem 0;
+    font-family: "Dancing Script", cursive;
+    font-size: 7rem;
     text-align: center; }
   #sectionFrontPage .boxImg1 {
     margin-top: 150px; }
+  #sectionFrontPage .btnFrontPage {
+    margin: 5rem auto; }
 
 #svgOnda1 {
   background-color: #175F7E; }
@@ -761,9 +780,13 @@ footer {
 
 #sectionHistory {
   padding: 0 2rem 0;
-  background-color: #D88F82; }
+  background-color: #EF7674; }
   #sectionHistory h1, #sectionHistory h2, #sectionHistory h3, #sectionHistory h4, #sectionHistory span, #sectionHistory p {
     color: #fff; }
+  #sectionHistory h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem; }
   #sectionHistory h3 {
     font-size: 3rem;
     text-align: center;
@@ -787,10 +810,10 @@ footer {
       box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
       transition: all 0.3s; }
     #sectionHistory .btnHistory a {
-      color: #D88F82; }
+      color: #EF7674; }
 
 #svgOnda2 {
-  background-color: #D88F82; }
+  background-color: #EF7674; }
 
 @media screen and (max-width: 600px) {
   #sectionHistory p {
@@ -802,10 +825,10 @@ footer {
   padding: 2rem; }
   #sectionDelivery h3 {
     font-size: 3rem;
-    color: #D88F82;
+    color: #EF7674;
     text-align: center; }
   #sectionDelivery .boxTextDelivery span {
-    color: #D88F82;
+    color: #EF7674;
     display: block;
     width: fit-content;
     margin: 1rem auto;

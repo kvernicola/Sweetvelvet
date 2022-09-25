@@ -15,23 +15,18 @@
 // ---------------------   Section FrontPage   --------------
 #sectionFrontPage {
     @include bgColor (map-get($colors, Secondary), map-get($colors, Quaternary));
-    // background-color: map-get($colors, Secondary);
     padding: 2rem;
     overflow: hidden;
     h2 {
-        font-size: 8rem;
-        margin-left: 4rem;
-    }
-    h3 {
-        font-size: 3rem;
-        margin: 2rem 0 0 15rem;
-    }
-    h4 {
-        margin: 2rem 0 1rem 0;
+        font-family: $logo-font;
+        font-size: 7rem;
         text-align: center;
     }
     .boxImg1 {
         margin-top: 150px;
+    }
+    .btnFrontPage {
+        margin: 5rem auto;
     }
 }
 
@@ -80,6 +75,11 @@
 #sectionHistory {
     padding: 0 2rem 0;
     @include bgColor (map-get($colors, Tertiary), map-get($colors, Quaternary));
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
     h3 {
         font-size: 3rem;
         text-align: center;
