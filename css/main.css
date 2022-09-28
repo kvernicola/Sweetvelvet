@@ -154,7 +154,7 @@ header {
   z-index: 50;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   padding: 0 1rem; }
   header .boxLogo {
     width: 200px;
@@ -382,10 +382,24 @@ footer {
     background-color: #fff;
     box-shadow: 4px 4px 10px black;
     margin: 1rem; }
-    #mainProducts .card .card-img-top {
-      width: 100%;
-      height: 330px;
-      object-fit: cover; }
+    #mainProducts .card .cardImgMiniTortas {
+      height: 400px; }
+      #mainProducts .card .cardImgMiniTortas .imgProductos {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    #mainProducts .card .cardImgLingotes {
+      height: 300px; }
+      #mainProducts .card .cardImgLingotes .imgProductos {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    #mainProducts .card .cardImgTortas {
+      height: 290px; }
+      #mainProducts .card .cardImgTortas .imgProductos {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
     #mainProducts .card .card-title {
       color: #EF7674;
       font-family: "Montserrat", sans-serif;
@@ -397,7 +411,7 @@ footer {
       height: 150px;
       color: #EF7674;
       font-family: "Poppins", sans-serif;
-      font-size: 1.2rem;
+      font-size: 1rem;
       text-align: justify; }
     #mainProducts .card .btn {
       background-color: #EF7674;

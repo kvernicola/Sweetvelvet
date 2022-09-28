@@ -23,10 +23,29 @@
         background-color: map-get($colors, Quaternary);
         box-shadow: 4px 4px 10px black;
         margin: 1rem;
-        .card-img-top {
-            width: 100%;
-            height: 330px;
-            object-fit: cover;
+        .cardImgMiniTortas {
+            height: 400px;
+            .imgProductos {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .cardImgLingotes {
+            height: 300px;
+            .imgProductos {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .cardImgTortas {
+            height: 290px;
+            .imgProductos {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
         .card-title {
             color: map-get($colors, Tertiary);
@@ -40,7 +59,7 @@
             height: 150px;
             color: map-get($colors, Tertiary);
             font-family: $text-font;
-            font-size: 1.2rem;
+            font-size: 1rem;
             text-align: justify;
             
         }
