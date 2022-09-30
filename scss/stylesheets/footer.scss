@@ -4,9 +4,10 @@ footer {
     h2 {
         font-family: $logo-font;
         font-weight: bold;
+        margin-bottom: 1rem;
     }
     h2:hover {
-        font-weight: bold;
+        color: black;
     }
     a {
         font-size: 1.3rem;
@@ -17,7 +18,7 @@ footer {
     #menuFooter {
         ul {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             li {
                 padding: 1rem 1rem;
             }
@@ -25,7 +26,7 @@ footer {
     }
     #boxFooter {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         padding: 0 1rem;
         .boxTxFooter {
@@ -40,6 +41,9 @@ footer {
         }
         .boxTxFooter3 {
             text-align: right;
+            a {
+                display: block;
+            }
         }
     }
 }

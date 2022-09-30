@@ -26,7 +26,7 @@
         margin-top: 150px;
     }
     .btnFrontPage {
-        margin: 5rem auto;
+        margin: 5rem auto 3rem;
     }
 }
 
@@ -36,6 +36,14 @@
 
 // -------------------   MediaQuerie FrontPage --------------
 
+@media screen and (max-width: 1400px) {
+    #sectionFrontPage {
+        h2 {
+            font-size: 5rem;
+        }
+    }
+}
+
 @media screen and (max-width: 767px) {
     #sectionFrontPage {
         h2 {
@@ -43,15 +51,11 @@
             text-align: center;
             margin-left: 0;
         }
-        h3 {
-            font-size: 45px;
-            text-align: center;
-            margin-left: 0;
+        .boxImg1 {
+            margin-top: 20px;
         }
-        h4 {
-            font-size: 35px;
-            text-align: center;
-            margin-left: 0;
+        .boxImg2 {
+            margin-top: 20px;
         }
     }
 }
@@ -61,11 +65,19 @@
         h2 {
             font-size: 50px;
         }
-        h3 {
-            font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    #sectionFrontPage {
+        padding: 2rem 0 0;
+        h2 {
+            font-size: 48px;
+            padding: 0 11px;
         }
-        h4 {
-            font-size: 2rem;
+        .boxImg1 {
+            margin-left: 15px;
+            margin-right: 15px;
         }
     }
 }
@@ -117,7 +129,7 @@
 }
 
 // -------------------   MediaQuerie History --------------
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
     #sectionHistory {
         p {
             font-size: 1.3rem;
@@ -125,6 +137,32 @@
         a {
             font-size: 1.3rem;
         }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #sectionHistory {
+        h3 {
+            font-size: 35px;
+        }
+        h4 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+        .btnHistory {
+            text-align: center;
+            a {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 415px) {
+    #sectionHistory {
+        padding: 8px;
     }
 }
 // ---------------------   Section Delivery  -----------------
@@ -155,7 +193,7 @@
 }
 
 // -------------------   MediaQuerie Delivery --------------
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
     #sectionDelivery {
         h3 {
             margin: 0 auto 3rem;
@@ -168,6 +206,13 @@
         }
     }
 }
+
+@media screen and (max-width: 415px) {
+    #sectionDelivery {
+        padding: 8px;
+    }
+}
+
 // ---------------------   Section Contact-US  -----------------
 
 #sectionContactUs {
@@ -202,11 +247,18 @@
 }
 
 // -------------------   MediaQuerie ContactUs --------------
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767) {
     #sectionContactUs {
-        h4 {
-            width: 100%;
-            margin: 0 auto 3rem;
+        .boxTextContactUs {
+            h4 {
+                font-size: 100px;
+            }
         }
+    }
+}
+
+@media screen and (max-width: 415px) {
+    #sectionContactUs {
+        padding: 8px;
     }
 }

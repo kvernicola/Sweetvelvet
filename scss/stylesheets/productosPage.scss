@@ -10,6 +10,8 @@
     }
     .nav-link {
         color: map-get($colors, Tertiary);
+        font-size: 1.4rem;
+        font-weight:500;
         &:hover {
             font-weight: bold;
         }
@@ -24,7 +26,7 @@
         box-shadow: 4px 4px 10px black;
         margin: 1rem;
         .cardImgMiniTortas {
-            height: 400px;
+            height: 380px;
             .imgProductos {
                 width: 100%;
                 height: 100%;
@@ -51,17 +53,16 @@
             color: map-get($colors, Tertiary);
             font-family: $title-font;
             font-size: 25px;
-            font-weight: bolder;
+            height: 50px;
             text-align: center;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
         }
         .card-text {
-            height: 150px;
+            height: 120px;
             color: map-get($colors, Tertiary);
             font-family: $text-font;
             font-size: 1rem;
             text-align: justify;
-            
         }
         .btn {
             background-color: map-get($colors, Tertiary);
@@ -69,6 +70,25 @@
             transition: all 0.2s;
             &:hover {
                 box-shadow: 4px 4px 10px black;
+            }
+        }
+    }
+}
+
+// ------------------------- Media Querie ------------------------------
+
+@media screen and (max-width: 1400px) {
+    #mainProducts {
+        .card {
+            margin: 0.7rem;
+            .cardImgMiniTortas {
+                height: 280px;
+            }
+            .cardImgLingotes {
+                height: 210px;
+            }
+            .cardImgTortas {
+                height: 230px;
             }
         }
     }

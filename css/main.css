@@ -144,6 +144,49 @@ ul {
 #sectionHistory .carousel-item img {
   max-height: 70vh; }
 
+#btnFloat {
+  width: 65px;
+  padding: 0.3rem;
+  position: fixed;
+  bottom: 50px;
+  right: 20px; }
+  #btnFloat #btnMore {
+    display: none; }
+    #btnFloat #btnMore:checked ~ .redes a {
+      margin-bottom: 10px;
+      opacity: 1;
+      visibility: visible; }
+  #btnFloat .redes a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    transition: all 500ms ease;
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden; }
+    #btnFloat .redes a img {
+      display: block;
+      width: 50px;
+      height: 50px; }
+      #btnFloat .redes a img:hover {
+        width: 55px;
+        height: 55px; }
+  #btnFloat .btnMore {
+    padding: 0.3rem;
+    width: 65px; }
+    #btnFloat .btnMore .icon-more {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px; }
+      #btnFloat .btnMore .icon-more img:hover {
+        width: 55px;
+        height: 55px;
+        cursor: pointer; }
+
 header {
   width: 100%;
   height: 120px;
@@ -186,7 +229,7 @@ header {
   display: none;
   position: absolute;
   top: 36px;
-  right: 15px;
+  right: 20px;
   z-index: 2; }
   #menu #menu-bar {
     width: 45px;
@@ -308,21 +351,22 @@ footer {
   padding: 0 1.5rem; }
   footer h2 {
     font-family: "Dancing Script", cursive;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-bottom: 1rem; }
   footer h2:hover {
-    font-weight: bold; }
+    color: black; }
   footer a {
     font-size: 1.3rem; }
     footer a:hover {
       color: #fff; }
   footer #menuFooter ul {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-around; }
     footer #menuFooter ul li {
       padding: 1rem 1rem; }
   footer #boxFooter {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 0 1rem; }
     footer #boxFooter .boxTxFooter {
@@ -334,6 +378,8 @@ footer {
         text-align: center; }
     footer #boxFooter .boxTxFooter3 {
       text-align: right; }
+      footer #boxFooter .boxTxFooter3 a {
+        display: block; }
 
 @media screen and (max-width: 950px) {
   footer #menuFooter ul {
@@ -371,7 +417,9 @@ footer {
     margin-left: 0%;
     color: #EF7674; }
   #mainProducts .nav-link {
-    color: #EF7674; }
+    color: #EF7674;
+    font-size: 1.4rem;
+    font-weight: 500; }
     #mainProducts .nav-link:hover {
       font-weight: bold; }
   #mainProducts .nav-link.active {
@@ -383,7 +431,7 @@ footer {
     box-shadow: 4px 4px 10px black;
     margin: 1rem; }
     #mainProducts .card .cardImgMiniTortas {
-      height: 400px; }
+      height: 380px; }
       #mainProducts .card .cardImgMiniTortas .imgProductos {
         width: 100%;
         height: 100%;
@@ -404,11 +452,11 @@ footer {
       color: #EF7674;
       font-family: "Montserrat", sans-serif;
       font-size: 25px;
-      font-weight: bolder;
+      height: 50px;
       text-align: center;
-      margin-bottom: 2rem; }
+      margin-bottom: 1rem; }
     #mainProducts .card .card-text {
-      height: 150px;
+      height: 120px;
       color: #EF7674;
       font-family: "Poppins", sans-serif;
       font-size: 1rem;
@@ -419,6 +467,16 @@ footer {
       transition: all 0.2s; }
       #mainProducts .card .btn:hover {
         box-shadow: 4px 4px 10px black; }
+
+@media screen and (max-width: 1400px) {
+  #mainProducts .card {
+    margin: 0.7rem; }
+    #mainProducts .card .cardImgMiniTortas {
+      height: 280px; }
+    #mainProducts .card .cardImgLingotes {
+      height: 210px; }
+    #mainProducts .card .cardImgTortas {
+      height: 230px; } }
 
 #mainContact {
   background-color: #175F7E;
@@ -765,32 +823,38 @@ footer {
   #sectionFrontPage .boxImg1 {
     margin-top: 150px; }
   #sectionFrontPage .btnFrontPage {
-    margin: 5rem auto; }
+    margin: 5rem auto 3rem; }
 
 #svgOnda1 {
   background-color: #175F7E; }
+
+@media screen and (max-width: 1400px) {
+  #sectionFrontPage h2 {
+    font-size: 5rem; } }
 
 @media screen and (max-width: 767px) {
   #sectionFrontPage h2 {
     font-size: 70px;
     text-align: center;
     margin-left: 0; }
-  #sectionFrontPage h3 {
-    font-size: 45px;
-    text-align: center;
-    margin-left: 0; }
-  #sectionFrontPage h4 {
-    font-size: 35px;
-    text-align: center;
-    margin-left: 0; } }
+  #sectionFrontPage .boxImg1 {
+    margin-top: 20px; }
+  #sectionFrontPage .boxImg2 {
+    margin-top: 20px; } }
 
 @media screen and (max-width: 600px) {
   #sectionFrontPage h2 {
-    font-size: 50px; }
-  #sectionFrontPage h3 {
-    font-size: 3rem; }
-  #sectionFrontPage h4 {
-    font-size: 2rem; } }
+    font-size: 50px; } }
+
+@media screen and (max-width: 415px) {
+  #sectionFrontPage {
+    padding: 2rem 0 0; }
+    #sectionFrontPage h2 {
+      font-size: 48px;
+      padding: 0 11px; }
+    #sectionFrontPage .boxImg1 {
+      margin-left: 15px;
+      margin-right: 15px; } }
 
 #sectionHistory {
   padding: 0 2rem 0;
@@ -829,11 +893,27 @@ footer {
 #svgOnda2 {
   background-color: #EF7674; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   #sectionHistory p {
     font-size: 1.3rem; }
   #sectionHistory a {
     font-size: 1.3rem; } }
+
+@media screen and (max-width: 600px) {
+  #sectionHistory h3 {
+    font-size: 35px; }
+  #sectionHistory h4 {
+    font-size: 30px; }
+  #sectionHistory p {
+    font-size: 1.1rem; }
+  #sectionHistory .btnHistory {
+    text-align: center; }
+    #sectionHistory .btnHistory a {
+      font-size: 1.2rem; } }
+
+@media screen and (max-width: 415px) {
+  #sectionHistory {
+    padding: 8px; } }
 
 #sectionDelivery {
   padding: 2rem; }
@@ -855,13 +935,17 @@ footer {
     align-items: center;
     justify-content: center; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   #sectionDelivery h3 {
     margin: 0 auto 3rem; }
   #sectionDelivery span {
     font-size: 1.3rem; }
   #sectionDelivery .btnDelivery {
     margin-top: 3rem; } }
+
+@media screen and (max-width: 415px) {
+  #sectionDelivery {
+    padding: 8px; } }
 
 #sectionContactUs {
   background-color: #175F7E;
@@ -888,7 +972,10 @@ footer {
     align-items: center;
     justify-content: center; }
 
-@media screen and (max-width: 600px) {
-  #sectionContactUs h4 {
-    width: 100%;
-    margin: 0 auto 3rem; } }
+@media screen and (max-width: 767) {
+  #sectionContactUs .boxTextContactUs h4 {
+    font-size: 100px; } }
+
+@media screen and (max-width: 415px) {
+  #sectionContactUs {
+    padding: 8px; } }

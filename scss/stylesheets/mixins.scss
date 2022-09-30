@@ -1,14 +1,4 @@
 
-$sizeHeading: (
-    h1: 60px,
-    h2: 40px,
-    h3: 40px,
-    h4: 40px
-);
-
-
-// --- Esto deberia ponerlo en otro scss - despues veo donde lo meto
-// mixin con y sin variables
 @mixin flexCenter {
     display: flex;
     align-items: center;
@@ -22,24 +12,3 @@ $sizeHeading: (
     }
 }
 
-// ACA ESTOY HACIENDO PRUEBAS POR ESO ESTA COMENTADO Y NO LO BORRE
-// @mixin responsive767 ($max-width, $headings) {
-//     @media screen and (max-width: $max-width) {
-//         h1 {
-            
-//         }
-//     }
-// }
-
-// @mixin mobile {
-//     @media screen and (min-width: 767px)  {
-//         @content
-//     }
-// }
-
-// header {
-//     height: 120px;
-//     @include mobile {
-//         height: 150px;
-//     }
-// }
