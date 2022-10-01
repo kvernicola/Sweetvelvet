@@ -7,16 +7,13 @@
 }
 
 a {
-    color: map-get($colors, Quaternary);
-    text-decoration: none;
-    &:hover {
-        font-weight: bold;
-    }
+    
+    
+
     &:visited {
         color: map-get($colors, Quaternary);
     }
 }
-
 
 h1,
 h2,
@@ -32,6 +29,12 @@ h4 {
 a {
     font-family: $menu-font;
     font-size: 1.7rem;
+    text-decoration: none;
+    color: map-get($colors, Quaternary);
+    &:hover {
+        font-weight: bold;
+        color: map-get($colors, Quaternary);
+    }
 }
 
 p,
@@ -40,7 +43,7 @@ span,
 legend {
     font-family: $text-font;
     color: map-get($colors, Quaternary);
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 hr {
@@ -61,10 +64,7 @@ ul {
     padding: 0;
 }
 
-
-
 // ----------------------  Boton Pedir Ahora  ---------------
-
 .pedirAhora {
     width: max-content;
     position: relative;
@@ -133,7 +133,6 @@ ul {
     }
 }
 
-
 // -------------------------  Boton Enviar    ----------------
 .btnEnviar {
     font-family: inherit;
@@ -184,12 +183,11 @@ ul {
     }
 }
 
-
 #sectionHistory .carousel-item img  {
     max-height: 70vh;
 }
 
-// -------------------------  Boton Flotante    ----------------
+// -------------------------  Boton Flotante Redes Sociales    ----------------
 #btnFloat {
     width: 65px;
     padding: 0.3rem;

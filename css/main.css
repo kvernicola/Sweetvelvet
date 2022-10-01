@@ -3,13 +3,8 @@
   padding: 0;
   box-sizing: border-box; }
 
-a {
-  color: #fff;
-  text-decoration: none; }
-  a:hover {
-    font-weight: bold; }
-  a:visited {
-    color: #fff; }
+a:visited {
+  color: #fff; }
 
 h1,
 h2,
@@ -23,7 +18,12 @@ h4 {
 
 a {
   font-family: "Acme", sans-serif;
-  font-size: 1.7rem; }
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: #fff; }
+  a:hover {
+    font-weight: bold;
+    color: #fff; }
 
 p,
 li,
@@ -31,7 +31,7 @@ span,
 legend {
   font-family: "Poppins", sans-serif;
   color: #fff;
-  font-size: 1.7rem; }
+  font-size: 1.5rem; }
 
 hr {
   width: 92%;
@@ -214,7 +214,7 @@ header {
       text-align: center; }
       header .boxLogo h1:hover,
       header .boxLogo h2:hover {
-        font-weight: bold; }
+        font-size: 42px; }
   header nav ul {
     display: flex;
     margin: 0; }
@@ -224,6 +224,8 @@ header {
         color: #fff; }
         header nav ul li a:visited {
           color: #fff; }
+        header nav ul li a:hover {
+          opacity: 0.7; }
 
 #menu {
   display: none;
@@ -301,50 +303,20 @@ header {
     padding: 0 1.5rem; } }
 
 @media screen and (max-width: 950px) {
-  body header nav {
+  header nav {
     display: none; }
-  body header #menu {
-    display: block; }
-  body .pedirAhora {
-    margin-right: 40%; } }
+  header #menu {
+    display: block; } }
 
 @media screen and (max-width: 600px) {
-  body header {
-    padding: 0; }
-  body .pedirAhora {
-    margin-right: 30%; } }
+  header {
+    padding: 0; } }
 
 @media screen and (max-width: 500px) {
-  header .pedirAhora a {
-    font-size: 1.2rem; }
   header .boxLogo h1 {
     font-size: 35px; }
   header .boxLogo h2 {
     font-size: 35px; } }
-
-@media screen and (max-width: 460px) {
-  header .pedirAhora .front a {
-    font-size: 1.2rem; }
-  header .boxLogo {
-    width: 170px; }
-    header .boxLogo h1 {
-      font-size: 30px; }
-    header .boxLogo h2 {
-      font-size: 30px; } }
-
-@media screen and (max-width: 400px) {
-  header .boxLogo {
-    width: 130px; }
-    header .boxLogo h1 {
-      width: 130px;
-      font-size: 30px; }
-    header .boxLogo h2 {
-      width: 130px;
-      font-size: 30px; } }
-
-@media screen and (max-width: 340px) {
-  header .pedirAhora {
-    margin-right: 22%; } }
 
 footer {
   background-color: #EC5766;
@@ -354,7 +326,7 @@ footer {
     font-weight: bold;
     margin-bottom: 1rem; }
   footer h2:hover {
-    color: black; }
+    font-size: 42px; }
   footer a {
     font-size: 1.3rem; }
     footer a:hover {
@@ -368,9 +340,10 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 1rem; }
+    padding: 0 1rem;
+    min-height: 120px; }
     footer #boxFooter .boxTxFooter {
-      width: 400px; }
+      width: 300px; }
       footer #boxFooter .boxTxFooter p {
         margin-bottom: 0;
         font-size: 1.3rem; }
@@ -477,6 +450,18 @@ footer {
       height: 210px; }
     #mainProducts .card .cardImgTortas {
       height: 230px; } }
+
+@media screen and (max-width: 500px) {
+  #mainProducts {
+    padding: 3rem 1rem; }
+    #mainProducts h1 {
+      font-size: 2rem; }
+    #mainProducts .nav-link {
+      color: #EF7674;
+      font-size: 1.2rem;
+      font-weight: 500; }
+      #mainProducts .nav-link:hover {
+        font-weight: bold; } }
 
 #mainContact {
   background-color: #175F7E;
@@ -728,6 +713,14 @@ footer {
   100% {
     transform: translate(0px, 0px); } }
 
+@media screen and (max-width: 500px) {
+  #mainContact {
+    padding: 1rem; }
+    #mainContact h1 {
+      font-size: 2rem;
+      margin: 2rem 0;
+      text-align: center; } }
+
 #bgLogin {
   background-image: url(../images/panadero.png);
   background-repeat: no-repeat;
@@ -741,6 +734,7 @@ footer {
       text-align: center; }
     #bgLogin #mainLogin #login_form {
       border: 2px solid #fff;
+      border-radius: 1rem;
       max-width: 768px;
       margin: 0px auto;
       padding: 1rem; }
@@ -899,11 +893,13 @@ footer {
   #sectionHistory a {
     font-size: 1.3rem; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
+  #sectionHistory h1 {
+    font-size: 2rem; }
   #sectionHistory h3 {
     font-size: 35px; }
   #sectionHistory h4 {
-    font-size: 30px; }
+    font-size: 28px; }
   #sectionHistory p {
     font-size: 1.1rem; }
   #sectionHistory .btnHistory {

@@ -24,7 +24,7 @@ header {
             width: 170px;
             text-align: center;
             &:hover {
-                font-weight: bold;
+                font-size: 42px;
             }
         }
     }
@@ -39,12 +39,14 @@ header {
                     &:visited {
                         color: map-get($colors, Quaternary);
                     }
+                    &:hover {
+                        opacity: 0.7;
+                    }
                 }
             }
         }
     }
 }
-
 
 // ------------------------------ Menu Hamb ---------------------
 #menu {
@@ -82,7 +84,6 @@ header {
     top: 30px;
     right: 15px;
 }
-
 
 .burguer-nav {
     transition: 0.3s ease;
@@ -125,7 +126,6 @@ header {
         transform: translateY(-5px) rotateZ(-45deg);
     }
 
-
 .change-bg {
     width: 520px;
     height: 480px;
@@ -133,7 +133,6 @@ header {
 }
 
 // ------------------------------ MediasQuerie --------------
-
 @media screen and (max-width: 980px) {
     header {
         nav {
@@ -147,40 +146,24 @@ header {
 }
 
 @media screen and (max-width: 950px) {
-    body {
-        header {
-            nav {
-                display: none;
-            }
-            #menu {
-                display: block;
-            }
+    header {
+        nav {
+            display: none;
         }
-        .pedirAhora {
-            margin-right: 40%;
+        #menu {
+            display: block;
         }
     }
 }
 
 @media screen and (max-width: 600px) {
-    body {
-        header {
-            padding: 0;
-        }
-        .pedirAhora {
-            margin-right: 30%;
-        }
+    header {
+        padding: 0;
     }
 }
-
 
 @media screen and (max-width: 500px) {
     header {
-        .pedirAhora {
-            a {
-                font-size: 1.2rem;
-            }
-        }
         .boxLogo {
             h1 {
                 font-size: 35px;
@@ -188,51 +171,6 @@ header {
             h2 {
                 font-size: 35px;
             }
-        }
-    }
-}
-
-@media screen and (max-width: 460px) {
-    header {
-        .pedirAhora {
-            .front {
-                a {
-                    font-size: 1.2rem;
-                }
-            }
-        }
-        .boxLogo {
-            width: 170px;
-            h1 {
-                font-size: 30px;
-            }
-            h2 {
-                font-size: 30px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 400px) {
-    header {
-        .boxLogo {
-            width: 130px;
-            h1 {
-                width: 130px;
-                font-size: 30px;
-            }
-            h2 {
-                width: 130px;
-                font-size: 30px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 340px) {
-    header {
-        .pedirAhora {
-            margin-right: 22%;
         }
     }
 }

@@ -311,3 +311,15 @@
         transform: translate(0px, 0px);
     }
 }
+
+// ------------------------- Media Querie ------------------------------
+@media screen and (max-width: 500px) {
+    #mainContact {
+        padding: 1rem;
+        h1 {
+            font-size: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+    }
+}

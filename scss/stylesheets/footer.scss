@@ -7,7 +7,7 @@ footer {
         margin-bottom: 1rem;
     }
     h2:hover {
-        color: black;
+        font-size: 42px;
     }
     a {
         font-size: 1.3rem;
@@ -29,8 +29,9 @@ footer {
         justify-content: space-around;
         align-items: center;
         padding: 0 1rem;
+        min-height: 120px;
         .boxTxFooter {
-            width: 400px;
+            width: 300px;
             p {
                 margin-bottom: 0;
                 font-size: 1.3rem;
@@ -49,7 +50,6 @@ footer {
 }
 
 // ------------------------------ MediasQuerie --------------
-
 @media screen and (max-width: 950px) {
     footer {
         #menuFooter {

@@ -76,7 +76,6 @@
 }
 
 // ------------------------- Media Querie ------------------------------
-
 @media screen and (max-width: 1400px) {
     #mainProducts {
         .card {
@@ -89,6 +88,23 @@
             }
             .cardImgTortas {
                 height: 230px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #mainProducts {
+        padding: 3rem 1rem;
+        h1 {
+            font-size: 2rem;
+        }
+        .nav-link {
+            color: map-get($colors, Tertiary);
+            font-size: 1.2rem;
+            font-weight:500;
+            &:hover {
+                font-weight: bold;
             }
         }
     }
